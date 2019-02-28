@@ -2,28 +2,25 @@
 #include "Comandos.h"
 
 
-void InicioPrograma(string &input, string &comando, string &parametro, string &termino) {
-
+void InicioPrograma(string &s) {
 
     IniciarPantalla();
-    leerComandoUsuario(input);
+    leerComandoUsuario(s);
 
-    int i = 0;
-    int palabras = 0;
-
-    strcrear(comando);
-    strcrear(parametro);
-    strcrear(termino);
-
-    getSiguiente(input,comando,i);
-    palabras = cantidadPalabras(input);
-
-    print(comando);
 
 }
 
-boolean validarComando (string s, string com1, string com2, string com3, string com4, string com5, string com6, string com7, string com8, string com9){
-    boolean b = FALSE;
+boolean validarComando (string s){
+    string com1= "crear";
+    string com2= "sumar";
+    string com3= "multiplicar";
+    string com4= "evaluar";
+    string com5= "esraiz";
+    string com6= "mostrar";
+    string com7= "guardar";
+    string com8= "recuperar";
+    string com9= "salir";
+boolean b = FALSE;
 // Convierto el string del usuario a lowercase para verificar
     for(int i = 0; s[i]; i++)
       s[i] = tolower(s[i]);
@@ -78,18 +75,57 @@ void leerComandoUsuario(string &input) {
     scan(input);
 }
 
-int cantidadPalabras (string str) {
-    int cont = ocurre(str,' ');
-    return (cont+1);
+
+
+
+
+
+int seleccionComando(string s){
+
+    string com1= "crear";
+    string com2= "sumar";
+    string com3= "multiplicar";
+    string com4= "evaluar";
+    string com5= "esraiz";
+    string com6= "mostrar";
+    string com7= "guardar";
+    string com8= "recuperar";
+    string com9= "salir";
+    int b;
+    // Convierto el string del usuario a lowercase para verificar
+    for(int i = 0; s[i]; i++)
+        s[i] = tolower(s[i]);
+    // Valido los comandos ingresados
+    if(streq(com1,s))
+        b = 1;
+    else
+        if(streq(com2,s))
+            b =2;
+    else
+        if(streq(com3,s))
+            b = 3;
+    else
+        if(streq(com4,s))
+            b = 4;
+    else
+        if(streq(com5,s))
+            b = 5;
+    else
+        if(streq(com6,s))
+            b = 6;
+    else
+        if(streq(com7,s))
+            b = 7;
+    else
+        if(streq(com8,s))
+            b = 8;
+    else
+        if(streq(com9,s))
+            b = 9;
+    else
+            b=10;
+
+    return b;
 }
 
-int ocurre (string str, char c) {
-    int i = 0,
-    cont = 0;
-    while (str[i] != '\0') {
-        if (str[i] == c)
-            cont++;
-        i++;
-    }
-    return cont;
-}
+

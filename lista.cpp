@@ -30,6 +30,8 @@ void MostrarLista(ListaCoeficientes l) {
         printf("\n");
         l = l -> sig;
     }
+
+
 }
 
 /* Precondición: lista NO vacía */
