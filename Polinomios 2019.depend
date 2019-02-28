@@ -512,10 +512,10 @@
 1551272685 source:c:\users\gamorim\desktop\versionrefactoreada\boolean.cpp
 	"boolean.h"
 
-1551357969 source:c:\users\gamorim\desktop\versionrefactoreada\comandos.cpp
+1551311280 source:c:\users\gamorim\desktop\versionrefactoreada\comandos.cpp
 	"Comandos.h"
 
-1551366548 c:\users\gamorim\desktop\versionrefactoreada\comandos.h
+1551310100 c:\users\gamorim\desktop\versionrefactoreada\comandos.h
 	<stdio.h>
 	"string.h"
 	<ctype.h>
@@ -525,7 +525,7 @@
 1551310809 source:c:\users\gamorim\desktop\versionrefactoreada\formula.cpp
 	"formula.h"
 
-1551366330 source:c:\users\gamorim\desktop\versionrefactoreada\main.cpp
+1551286408 source:c:\users\gamorim\desktop\versionrefactoreada\main.cpp
 	<stdio.h>
 	"Comandos.h"
 
@@ -538,12 +538,80 @@
 1551311426 source:c:\users\gamorim\desktop\versionrefactoreada\termino.cpp
 	"termino.h"
 
-1551312790 c:\users\gamorim\desktop\versionrefactoreada\lista.h
+1551310910 c:\users\gamorim\desktop\versionrefactoreada\lista.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 	"termino.h"
 
-1551366489 source:c:\users\gamorim\desktop\versionrefactoreada\lista.cpp
+1551310928 source:c:\users\gamorim\desktop\versionrefactoreada\lista.cpp
 	"lista.h"
+
+1551272685 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\abb.cpp
+	"ABB.h"
+
+1551272685 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1551272685 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1551310896 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551272685 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\boolean.h
+	<stdio.h>
+
+1551327530 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\string.h
+	<stdio.h>
+	"boolean.h"
+
+1551310446 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1551272685 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\boolean.cpp
+	"boolean.h"
+
+1551310809 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\formula.cpp
+	"formula.h"
+
+1551272685 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\polinomio.cpp
+	"polinomio.h"
+
+1551328327 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\string.cpp
+	"string.h"
+
+1551311426 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\termino.cpp
+	"termino.h"
+
+1551312787 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\lista.cpp
+	"lista.h"
+
+1551312790 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551327958 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\comandos.cpp
+	"Comandos.h"
+
+1551327530 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+
+1551328758 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\versionrefactoreada\main.cpp
+	<stdio.h>
+	"Comandos.h"
 

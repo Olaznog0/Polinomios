@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "boolean.h"
 
+
 const int MAX = 80;
 typedef char * string;
 
@@ -19,5 +20,7 @@ void strcop (string &s1, string s2); /* copia el contenido del string s2 en s1 *
 void strcon (string &s1, string s2); /* concatena el contenido de s2 al final de s1 */
 void strswp (string &s1, string &s2); /* intercambia los contenidos de s1 y s2 */
 void getSiguiente(string s,string &g,int &i); /*devuelve la siguiente palabra del string */
+int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
+int ocurre (string str, char c); /* Cuenta la cantidad de ocurrencias de char, en este caso de espacios ' ' en el input del usuario */
 
 #endif

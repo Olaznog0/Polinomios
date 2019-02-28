@@ -117,9 +117,30 @@ void getSiguiente(string s,string &g,int &i){
     int j = 0;
     g = new char[MAX];
     while (s[i] != ' ' && s[i] !='\0') {
-        g[j]=s[i];
+            g[j]=s[i];
+            i++;
+            j++;
+   /*while(s[i] = ' '){
         i++;
-        j++;
+        }*/
+
+
     }
     g[j]='\0';
+}
+
+int cantidadPalabras (string str) {
+    int cont = ocurre(str,' ');
+    return (cont+1);
+}
+
+int ocurre (string str, char c) {
+    int i = 0,
+    cont = 0;
+    while (str[i] != '\0') {
+        if (str[i] == c)
+            cont++;
+        i++;
+    }
+    return cont;
 }
