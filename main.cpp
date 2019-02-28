@@ -3,8 +3,6 @@
 
 int main() {
 
-    //SIMPLE FILE CHANGE TO SEE IF WE CAN FIND IT.
-
     string input;
     string comando;
     string parametro;
