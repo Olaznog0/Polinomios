@@ -2,9 +2,13 @@
 #include "Comandos.h"
 
 
+
 void InicioPrograma(string &s) {
+
     IniciarPantalla();
     leerComandoUsuario(s);
+
+
 }
 
 boolean validarComando (string s){
@@ -67,10 +71,15 @@ void IniciarPantalla() {
     print("Ingrese comando: ");
 }
 
-void leerComandoUsuario(string &in) {
-    strcrear(in);
-    scan(in);
+void leerComandoUsuario(string &input) {
+    strcrear(input);
+    scan(input);
 }
+
+
+
+
+
 
 int seleccionComando(string s){
 
@@ -119,34 +128,27 @@ int seleccionComando(string s){
 
     return b;
 }
-
-void comandoCrear(string &in, string &c) {
-
+void comandoCrear(string in,string &c){
     if(cantidadPalabras(in)>2){
                 string parametro;
                 string termino;
                 ListaCoeficientes listaTerminos;
-                strcrear(c);
-                strcrear(parametro);
-                strcrear(termino);
+                int i=strlar(c);
 
-                int i = strlar(c);
-                //i++; // avanzo el i para que no quede trancado en el espacio ' '
-                getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
-                printf("\nEl parametro ingresado es:\n");
+                getSiguiente(in, parametro, i);// busco parametro nombre de archivo y posterior verificacion a implementar
+                printf("\nEl nombre ingresado es:\n");
                 print(parametro);
-                if(parametro) {// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
+               // if(parametro) {// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
                     crearLista(listaTerminos);
 
                 while(in[i]!= '\0'){
-                    i++;
                     getSiguiente(in, termino, i);
                     printf("\nEl termino ingresado es:\n");
                     print(termino);
                     InsFront(listaTerminos, termino);
                     //VALIDAR
                 }
-                MostrarLista(listaTerminos);
+                //MostrarLista(listaTerminos);
                 Formula form;
                 crearFormula(form);
                 int contGrado = 0;
@@ -158,12 +160,13 @@ void comandoCrear(string &in, string &c) {
                     listaTerminos = listaTerminos -> sig;
                         }
                 MostrarFormula(form);
-                    }
+                printf("\n");
+                Polinomio poli = crearPolinomio(form,parametro);
+                mostrarPolinomio(poli);
+
 
                 }
            else
-                    printf("Cantidad de palabras ingresadas no es valida");
-
-
+                printf("Cantidad de palabras ingresadas no es valida");
 }
 

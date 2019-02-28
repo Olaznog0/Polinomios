@@ -615,71 +615,73 @@
 	<stdio.h>
 	"Comandos.h"
 
-1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\abb.cpp
+1551391194 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\abb.cpp
 	"ABB.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\abb.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\abb.h
 	<stdio.h>
 	"polinomio.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\polinomio.h
+1551394416 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\polinomio.h
 	<stdio.h>
 	"formula.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\formula.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\formula.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 	"termino.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\boolean.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\boolean.h
 	<stdio.h>
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\string.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\string.h
 	<stdio.h>
 	"boolean.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\termino.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\termino.h
 	<stdio.h>
 	<stdlib.h>
 	"boolean.h"
 	"string.h"
 
-1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\boolean.cpp
+1551391194 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\boolean.cpp
 	"boolean.h"
 
-1551393703 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\comandos.cpp
+1551397156 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\comandos.cpp
 	"Comandos.h"
 
-1551393725 c:\users\gamorim\desktop\polinomios-master\polinomios-master\comandos.h
+1551396752 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\comandos.h
 	<stdio.h>
 	"string.h"
 	<ctype.h>
 	"lista.h"
 	"formula.h"
+	"polinomio.h"
 
-1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\lista.h
+1551391194 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\lista.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 	"termino.h"
 
-1551391494 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\formula.cpp
+1551391194 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\formula.cpp
 	"formula.h"
 
-1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\lista.cpp
+1551391194 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\lista.cpp
 	"lista.h"
 
-1551393827 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\main.cpp
+1551396581 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\main.cpp
 	<stdio.h>
 	"Comandos.h"
-
-1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\polinomio.cpp
 	"polinomio.h"
 
-1551392325 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\string.cpp
+1551394473 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\polinomio.cpp
+	"polinomio.h"
+
+1551397186 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\string.cpp
 	"string.h"
 
-1551391882 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\termino.cpp
+1551392438 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-master\termino.cpp
 	"termino.h"
 

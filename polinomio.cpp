@@ -1,10 +1,17 @@
 /* polinomio.cpp */
 #include"polinomio.h"
 
-Polinomio CrearPolinomio(string poli) {
+Polinomio crearPolinomio(Formula f,string s) {
+    Polinomio p;
+    p.formu = f;
+    p.nombre = s;
+    return p;
 }
 
-void MostrarPolinomio(Polinomio p) {
+void mostrarPolinomio(Polinomio p) {
+    print(p.nombre);
+    printf("\t");
+    MostrarFormula(p.formu);
 
 }
 

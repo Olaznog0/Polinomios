@@ -10,8 +10,8 @@ typedef struct {
             Formula formu;
         }Polinomio;
 
-Polinomio Crear(string poli); /* Crear un polinomio desde un string */
-void MostrarPolinomio(Polinomio p); /* Muestra Polinomio */
+Polinomio crearPolinomio(Formula f,string s); /* Crear un polinomio desde un string */
+void mostrarPolinomio(Polinomio p); /* Muestra Polinomio */
 Polinomio SumarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b); /* Suma un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
 Polinomio multiplicarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b); /* Multiplica un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
 
