@@ -615,3 +615,71 @@
 	<stdio.h>
 	"Comandos.h"
 
+1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\abb.cpp
+	"ABB.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\boolean.h
+	<stdio.h>
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\string.h
+	<stdio.h>
+	"boolean.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\boolean.cpp
+	"boolean.h"
+
+1551393703 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\comandos.cpp
+	"Comandos.h"
+
+1551393725 c:\users\gamorim\desktop\polinomios-master\polinomios-master\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+
+1551391264 c:\users\gamorim\desktop\polinomios-master\polinomios-master\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551391494 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\formula.cpp
+	"formula.h"
+
+1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\lista.cpp
+	"lista.h"
+
+1551393827 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\main.cpp
+	<stdio.h>
+	"Comandos.h"
+
+1551391264 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\polinomio.cpp
+	"polinomio.h"
+
+1551392325 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\string.cpp
+	"string.h"
+
+1551391882 source:c:\users\gamorim\desktop\polinomios-master\polinomios-master\termino.cpp
+	"termino.h"
+
