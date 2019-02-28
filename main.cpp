@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include "Comandos.h"
+#include "polinomio.h"
 
 int main() {
  string comando;
  string input;
+ int i=0;
 
 
  do{
     InicioPrograma(input);
-    int i=0;
     getSiguiente(input,comando,i);
+     printf("%d",i);
     if(validarComando(comando)){
        printf("\nComando Validado\n");
-       if(seleccionComando(comando)==1) {
-            comandoCrear(input, comando);
-        }
+        if(seleccionComando(comando)==1) {
+        comandoCrear(input, comando);
+                }
         else if(seleccionComando(comando)==2)
                 printf("Entro a sumar");
         else if(seleccionComando(comando)==3)

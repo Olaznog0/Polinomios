@@ -7,9 +7,8 @@
 #include <ctype.h> // tolower Case
 #include "lista.h"
 #include "formula.h"
+#include"polinomio.h"
 
- //string comando;
- //string in;
 
 void InicioPrograma(string &s); /* Inicio del programa */
 void IniciarPantalla(); /* Inicio de pantalla */
@@ -17,8 +16,7 @@ void InicioAcciones();
 void leerComandoUsuario(string &str); /* Cargar string input del usuario */
 boolean validarComando (string s); /* Valida el ingreso del comando seleccionado por el input del usuario */
 int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
-void comandoCrear(string &in, string &c);
-
+void comandoCrear(string in,string &c);
 int seleccionComando(string s); /*dado un string de comando, devuelve un int con el numero de comando*/
 
 #endif // COMANDOS_H_INCLUDED
