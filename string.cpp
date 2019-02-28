@@ -117,14 +117,12 @@ void getSiguiente(string s,string &g,int &i){
     int j = 0;
     g = new char[MAX];
     while (s[i] != ' ' && s[i] !='\0') {
-            g[j]=s[i];
-            i++;
-            j++;
-   /*while(s[i] = ' '){
+        g[j]=s[i];
         i++;
-        }*/
-
-
+        j++;
+    }
+    while(s[i+1] == ' '){
+        i++;
     }
     g[j]='\0';
 }
