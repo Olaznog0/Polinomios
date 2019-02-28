@@ -1,60 +1,22 @@
 #include <stdio.h>
 #include "Comandos.h"
+#include "polinomio.h"
 
 int main() {
  string comando;
  string input;
- InicioPrograma(input);
+ int i=0;
 
- //do{
 
-    int i=0;
+ do{
+    InicioPrograma(input);
     getSiguiente(input,comando,i);
+     printf("%d",i);
     if(validarComando(comando)){
        printf("\nComando Validado\n");
-       if(seleccionComando(comando)==1) {
-            if(cantidadPalabras(input)>2){
-                string parametro;
-                string termino;
-                ListaCoeficientes listaTerminos;
-                strcrear(comando);
-                strcrear(parametro);
-                strcrear(termino);
-
-                int i = strlar(comando);
-                //i++; // avanzo el i para que no quede trancado en el espacio ' '
-                getSiguiente(input, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
-                printf("\nEl parametro ingresado es:\n");
-                print(parametro);
-                if(parametro) {// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
-                    crearLista(listaTerminos);
-
-                while(input[i]!= '\0'){
-                    i++;
-                    getSiguiente(input, termino, i);
-                    printf("\nEl termino ingresado es:\n");
-                    print(termino);
-                    InsFront(listaTerminos, termino);
-                    //VALIDAR
+        if(seleccionComando(comando)==1) {
+        comandoCrear(input, comando);
                 }
-                MostrarLista(listaTerminos);
-                Formula form;
-                crearFormula(form);
-                int contGrado = 0;
-                while(listaTerminos != NULL){
-
-                    Termino t;
-                    CargarTermino(t, listaTerminos->info, contGrado);
-                    insTermino(form, t);
-                    listaTerminos = listaTerminos -> sig;
-                        }
-                MostrarFormula(form);
-                    }
-
-                }
-           else
-                    printf("Cantidad de palabras ingresadas no es valida");
-        }
         else if(seleccionComando(comando)==2)
                 printf("Entro a sumar");
         else if(seleccionComando(comando)==3)
@@ -76,7 +38,7 @@ int main() {
         printf("\nTiene un error en el nombre del comando, usted escribio: ");
         print(comando);
     }
-//} while (seleccionComando(comando)!= 9);
+} while (seleccionComando(comando)!= 9);
 
 return 0;
 }

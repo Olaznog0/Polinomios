@@ -2,6 +2,7 @@
 #include "Comandos.h"
 
 
+
 void InicioPrograma(string &s) {
 
     IniciarPantalla();
@@ -127,5 +128,45 @@ int seleccionComando(string s){
 
     return b;
 }
+void comandoCrear(string in,string &c){
+    if(cantidadPalabras(in)>2){
+                string parametro;
+                string termino;
+                ListaCoeficientes listaTerminos;
+                int i=strlar(c);
 
+                getSiguiente(in, parametro, i);// busco parametro nombre de archivo y posterior verificacion a implementar
+                printf("\nEl nombre ingresado es:\n");
+                print(parametro);
+               // if(parametro) {// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
+                    crearLista(listaTerminos);
+
+                while(in[i]!= '\0'){
+                    getSiguiente(in, termino, i);
+                    printf("\nEl termino ingresado es:\n");
+                    print(termino);
+                    InsFront(listaTerminos, termino);
+                    //VALIDAR
+                }
+                //MostrarLista(listaTerminos);
+                Formula form;
+                crearFormula(form);
+                int contGrado = 0;
+                while(listaTerminos != NULL){
+
+                    Termino t;
+                    CargarTermino(t, listaTerminos->info, contGrado);
+                    insTermino(form, t);
+                    listaTerminos = listaTerminos -> sig;
+                        }
+                MostrarFormula(form);
+                printf("\n");
+                Polinomio poli = crearPolinomio(form,parametro);
+                mostrarPolinomio(poli);
+
+
+                }
+           else
+                printf("Cantidad de palabras ingresadas no es valida");
+}
 

@@ -10,8 +10,10 @@ void CargarTermino (Termino &t, string a, int &i){
 }
 
 void MostrarTermino (Termino t){
-    printf(" %ldX", t.coeficiente);
-    printf("%d", t.grado);
+    if(t.coeficiente!= 0) {
+        printf(" %ldX", t.coeficiente);
+        printf("%d", t.grado);
+    }
 }
 
 Termino SumarTerminos (Termino a, Termino b){
