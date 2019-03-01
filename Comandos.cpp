@@ -1,64 +1,14 @@
 /* Comandos.cpp */
 #include "Comandos.h"
 
-
-
 void InicioPrograma(string &s) {
-
     IniciarPantalla();
     leerComandoUsuario(s);
-
-
-}
-
-boolean validarComando (string s){
-    string com1= "crear";
-    string com2= "sumar";
-    string com3= "multiplicar";
-    string com4= "evaluar";
-    string com5= "esraiz";
-    string com6= "mostrar";
-    string com7= "guardar";
-    string com8= "recuperar";
-    string com9= "salir";
-boolean b = FALSE;
-// Convierto el string del usuario a lowercase para verificar
-    for(int i = 0; s[i]; i++)
-      s[i] = tolower(s[i]);
-// Valido los comandos ingresados
-    if(streq(com1,s))
-        b = TRUE;
-    else
-        if(streq(com2,s))
-            b = TRUE;
-    else
-        if(streq(com3,s))
-            b = TRUE;
-    else
-        if(streq(com4,s))
-            b = TRUE;
-    else
-        if(streq(com5,s))
-            b = TRUE;
-    else
-        if(streq(com6,s))
-            b = TRUE;
-    else
-        if(streq(com7,s))
-            b = TRUE;
-    else
-        if(streq(com8,s))
-            b = TRUE;
-    else
-        if(streq(com9,s))
-            b = TRUE;
-
-    return b;
 }
 
 void IniciarPantalla() {
-    printf("\n Bienvenido al programa.");
-    printf("\n Ingrese un Comando para continuar, por mas informacion presione :ayuda\n");
+    printf("\n\tBienvenido al programa.");
+    printf("\n\tIngrese un Comando para continuar.\n");
     printf("\n1- Crear: crea un nuevo polinomio especificando todos sus coeficientes");
     printf("\n2- Sumar: realiza la suma de dos polinomios, creando uno nuevo como resultado");
     printf("\n3- Multiplicar: realiza la multiplicacion de dos polinomios, creando uno nuevo como resultado");
@@ -76,13 +26,7 @@ void leerComandoUsuario(string &input) {
     scan(input);
 }
 
-
-
-
-
-
 int seleccionComando(string s){
-
     string com1= "crear";
     string com2= "sumar";
     string com3= "multiplicar";
@@ -98,10 +42,10 @@ int seleccionComando(string s){
         s[i] = tolower(s[i]);
     // Valido los comandos ingresados
     if(streq(com1,s))
-        b = 1;
+            b = 1;
     else
         if(streq(com2,s))
-            b =2;
+            b = 2;
     else
         if(streq(com3,s))
             b = 3;
@@ -124,49 +68,53 @@ int seleccionComando(string s){
         if(streq(com9,s))
             b = 9;
     else
-            b=10;
+        b = 10;
 
     return b;
+    delete com1;
+    delete com2;
+    delete com3;
+    delete com4;
+    delete com5;
+    delete com6;
+    delete com7;
+    delete com8;
+    delete com9;
 }
-void comandoCrear(string in,string &c){
-    if(cantidadPalabras(in)>2){
-                string parametro;
-                string termino;
-                ListaCoeficientes listaTerminos;
-                int i=strlar(c);
-
-                getSiguiente(in, parametro, i);// busco parametro nombre de archivo y posterior verificacion a implementar
-                printf("\nEl nombre ingresado es:\n");
-                print(parametro);
-               // if(parametro) {// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
-                    crearLista(listaTerminos);
-
-                while(in[i]!= '\0'){
-                    getSiguiente(in, termino, i);
-                    printf("\nEl termino ingresado es:\n");
-                    print(termino);
-                    InsFront(listaTerminos, termino);
-                    //VALIDAR
-                }
-                //MostrarLista(listaTerminos);
-                Formula form;
-                crearFormula(form);
-                int contGrado = 0;
-                while(listaTerminos != NULL){
-
-                    Termino t;
-                    CargarTermino(t, listaTerminos->info, contGrado);
-                    insTermino(form, t);
-                    listaTerminos = listaTerminos -> sig;
-                        }
-                MostrarFormula(form);
-                printf("\n");
-                Polinomio poli = crearPolinomio(form,parametro);
-                mostrarPolinomio(poli);
-
-
-                }
-           else
-                printf("Cantidad de palabras ingresadas no es valida");
+void comandoCrear(string in,string &c) {
+    if(cantidadPalabras(in) > 2){
+        string parametro;
+        string termino;
+        ListaCoeficientes listaTerminos;
+        int i=strlar(c);
+        getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
+        printf("\nEl nombre ingresado es:\n");
+        print(parametro);
+// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
+        crearLista(listaTerminos);
+        while(in[i]!= '\0') {
+            getSiguiente(in, termino, i);
+            printf("\nEl termino ingresado es:\n");
+            print(termino);
+            InsFront(listaTerminos, termino);
+            //VALIDAR
+        }
+        //MostrarLista(listaTerminos);
+        Formula form;
+        crearFormula(form);
+        int contGrado = 0;
+        while(listaTerminos != NULL){
+            Termino t;
+            CargarTermino(t, listaTerminos->info, contGrado);
+            insTermino(form, t);
+            listaTerminos = listaTerminos -> sig;
+        }
+        MostrarFormula(form);
+        printf("\n");
+        Polinomio poli = crearPolinomio(form,parametro);
+        mostrarPolinomio(poli);
+    }
+    else
+        printf("Cantidad de palabras ingresadas no es valida");
 }
 

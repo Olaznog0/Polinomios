@@ -3,7 +3,6 @@
 
 void crearFormula(Formula &f) {
     f = NULL;
-
 }
 
 void MostrarFormula(Formula a) {
@@ -11,7 +10,6 @@ void MostrarFormula(Formula a) {
         MostrarTermino(a -> info);
         a = a -> sig;
     }
-
 }
 
 int GradoFormula(Formula a) {

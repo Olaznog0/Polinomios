@@ -12,7 +12,6 @@ void mostrarPolinomio(Polinomio p) {
     print(p.nombre);
     printf("\t");
     MostrarFormula(p.formu);
-
 }
 
 Polinomio SumarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b) {
