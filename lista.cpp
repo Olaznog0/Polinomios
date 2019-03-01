@@ -20,18 +20,14 @@ void CargarLista(string g) {
 
 
 void MostrarLista(ListaCoeficientes l) {
-    //int i = 0;
     string str;
     strcrear(str);
     boolean b = FALSE;
     while(l != NULL) {
-        //streq(l -> info, str);
         print(l-> info);
         printf("\n");
         l = l -> sig;
     }
-
-
 }
 
 /* Precondición: lista NO vacía */

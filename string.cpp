@@ -113,10 +113,9 @@ void strswp (string &s1, string &s2) {
 	s2 = aux;
 }
 
-void getSiguiente(string s,string &g,int &i){
+void getSiguiente(string s, string &g, int &i) {
     while(s[i] == ' ' && s[i]!='\0')
          i++;
-
     int j = 0;
     g = new char[MAX];
     while (s[i] != ' ' && s[i] !='\0') {
@@ -125,11 +124,6 @@ void getSiguiente(string s,string &g,int &i){
         j++;
     }
      g[j]='\0';
-
-
-
-
-
 }
 
 int cantidadPalabras (string str) {
