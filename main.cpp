@@ -2,13 +2,15 @@
 #include "Comandos.h"
 #include "polinomio.h"
 
+// hay un conflicto
+
 int main() {
  string comando;
  string input;
  int i=0;
 
 
- do{
+ do {
     InicioPrograma(input);
     getSiguiente(input,comando,i);
      printf("%d",i);
