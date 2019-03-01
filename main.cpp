@@ -32,6 +32,7 @@ int main() {
             print(comando);
         }
     } while (seleccionComando(comando)!= 9);
-
+    
     return 0;
 }
+

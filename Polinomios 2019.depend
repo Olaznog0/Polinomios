@@ -254,116 +254,116 @@
 1551129074 source:c:\users\desktopz\desktop\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\termino.cpp
 	"termino.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\boolean.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\boolean.cpp
 	"boolean.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\boolean.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\boolean.h
 	<stdio.h>
 
-1551227836 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\comandos.cpp
+1551227836 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\comandos.cpp
 	"Comandos.h"
 	<ctype.h>
 	<conio.h>
 
-1551227843 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\comandos.h
+1551227843 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\comandos.h
 	<stdio.h>
 	"string.h"
 
-1551142411 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\string.h
+1551142411 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\string.h
 	<stdio.h>
 	"boolean.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\formula.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\formula.cpp
 	"formula.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\formula.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\formula.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 	"termino.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\termino.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\termino.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 
-1551147849 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\main.cpp
+1551147849 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\main.cpp
 	<stdio.h>
 	"Comandos.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\polinomio.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\polinomio.cpp
 	"polinomio.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\polinomio.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\polinomio.h
 	<stdio.h>
 	"formula.h"
 
-1551147904 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\string.cpp
+1551147904 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\string.cpp
 	"string.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\termino.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\termino.cpp
 	"termino.h"
 
-1551141383 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\abb.cpp
+1551141383 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\abb.cpp
 	"ABB.h"
 
-1551141914 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\abb.h
+1551141914 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\polinomio-25-2019\polinomios 2019-22-2-20190225t211026z-001\polinomios 2019-22-2\polinomios 2019\abb.h
 	<stdio.h>
 	"polinomio.h"
 
-1551141383 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\abb.cpp
+1551141383 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\abb.cpp
 	"ABB.h"
 
-1551141914 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\abb.h
+1551141914 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\abb.h
 	<stdio.h>
 	"polinomio.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\polinomio.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\polinomio.h
 	<stdio.h>
 	"formula.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\formula.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\formula.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 	"termino.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\boolean.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\boolean.h
 	<stdio.h>
 
-1551142411 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\string.h
+1551142411 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\string.h
 	<stdio.h>
 	"boolean.h"
 
-1551129076 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\termino.h
+1551129076 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\termino.h
 	<stdio.h>
 	"boolean.h"
 	"string.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\boolean.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\boolean.cpp
 	"boolean.h"
 
-1551228460 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\comandos.cpp
+1551228460 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\comandos.cpp
 	"Comandos.h"
 
-1551228458 c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\comandos.h
+1551228458 c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\comandos.h
 	<stdio.h>
 	"string.h"
 	<ctype.h>
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\formula.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\formula.cpp
 	"formula.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\polinomio.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\polinomio.cpp
 	"polinomio.h"
 
-1551147904 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\string.cpp
+1551147904 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\string.cpp
 	"string.h"
 
-1551129076 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\termino.cpp
+1551129076 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\termino.cpp
 	"termino.h"
 
-1551228622 source:c:\users\g_amo\onedrive\ude\ingeniería 2019\taller i\26-2-polinomios 2019\main.cpp
+1551228622 source:c:\users\g_amo\onedrive\ude\ingenierÃ­a 2019\taller i\26-2-polinomios 2019\main.cpp
 	<stdio.h>
 	"Comandos.h"
 
@@ -754,73 +754,3 @@
 
 1551398729 source:c:\users\gamorim\desktop\polinomios-master\termino.cpp
 	"termino.h"
-
-1551406984 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\abb.cpp
-	"ABB.h"
-
-1551406984 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\abb.h
-	<stdio.h>
-	"polinomio.h"
-
-1551446507 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\polinomio.h
-	<stdio.h>
-	"formula.h"
-
-1551406985 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\formula.h
-	<stdio.h>
-	"boolean.h"
-	"string.h"
-	"termino.h"
-
-1551406985 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\boolean.h
-	<stdio.h>
-
-1551409294 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\string.h
-	<stdio.h>
-	"boolean.h"
-
-1551406985 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\termino.h
-	<stdio.h>
-	<stdlib.h>
-	"boolean.h"
-	"string.h"
-
-1551406985 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\boolean.cpp
-	"boolean.h"
-
-1551447662 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\comandos.cpp
-	"Comandos.h"
-
-1551408732 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\comandos.h
-	<stdio.h>
-	"string.h"
-	<ctype.h>
-	"lista.h"
-	"formula.h"
-	"polinomio.h"
-
-1551406985 c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\lista.h
-	<stdio.h>
-	"boolean.h"
-	"string.h"
-	"termino.h"
-
-1551408692 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\formula.cpp
-	"formula.h"
-
-1551446530 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\lista.cpp
-	"lista.h"
-
-1551446488 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\polinomio.cpp
-	"polinomio.h"
-
-1551409242 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\string.cpp
-	"string.h"
-
-1551446373 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\termino.cpp
-	"termino.h"
-
-1551446599 source:c:\users\g_amo\desktop\polinomios-staging\polinomios-staging\main.cpp
-	<stdio.h>
-	"Comandos.h"
-
