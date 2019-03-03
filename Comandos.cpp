@@ -2,13 +2,12 @@
 #include "Comandos.h"
 
 void InicioPrograma(string &s) {
-    IniciarPantalla();
     leerComandoUsuario(s);
 }
 
 void IniciarPantalla() {
     printf("\n\tBienvenido al programa.");
-    printf("\n\tIngrese un Comando para continuar.\n");
+    printf("\n\tIngrese un Comando para continuar. Para repetir el menu presione :menu\n");
     printf("\n1- Crear: crea un nuevo polinomio especificando todos sus coeficientes");
     printf("\n2- Sumar: realiza la suma de dos polinomios, creando uno nuevo como resultado");
     printf("\n3- Multiplicar: realiza la multiplicacion de dos polinomios, creando uno nuevo como resultado");
@@ -18,7 +17,6 @@ void IniciarPantalla() {
     printf("\n7- Guardar: guarda en archivo un polinomio existente en memoria");
     printf("\n8- Recuperar: recupera a memoria un polinomio previamente guardado en archivo");
     printf("\n9- Salir: abandona la aplicacion\n\n");
-    print("Ingrese comando: ");
 }
 
 void leerComandoUsuario(string &input) {
@@ -36,6 +34,7 @@ int seleccionComando(string s){
     string com7= "guardar";
     string com8= "recuperar";
     string com9= "salir";
+    string com10= "menu";
     int b;
     // Convierto el string del usuario a lowercase para verificar
     for(int i = 0; s[i]; i++)
@@ -68,8 +67,10 @@ int seleccionComando(string s){
         if(streq(com9,s))
             b = 9;
     else
-        b = 10;
-
+        if(streq(com10,s))
+            b = 10;
+    else
+        b = 11;
     return b;
     delete com1;
     delete com2;
@@ -80,41 +81,50 @@ int seleccionComando(string s){
     delete com7;
     delete com8;
     delete com9;
+    delete com10;
 }
+
 void comandoCrear(string in,string &c) {
     if(cantidadPalabras(in) > 2){
         string parametro;
-        string termino;
-        ListaCoeficientes listaTerminos;
         int i=strlar(c);
-        getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
-        printf("\nEl nombre ingresado es:\n");
-        print(parametro);
-// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
-        crearLista(listaTerminos);
-        while(in[i]!= '\0') {
-            getSiguiente(in, termino, i);
-            printf("\nEl termino ingresado es:\n");
-            print(termino);
-            InsFront(listaTerminos, termino);
-            //VALIDAR
-        }
-        //MostrarLista(listaTerminos);
-        Formula form;
-        crearFormula(form);
-        int contGrado = 0;
-        while(listaTerminos != NULL){
-            Termino t;
-            CargarTermino(t, listaTerminos->info, contGrado);
-            insTermino(form, t);
-            listaTerminos = listaTerminos -> sig;
-        }
-        MostrarFormula(form);
-        printf("\n");
-        Polinomio poli = crearPolinomio(form,parametro);
-        mostrarPolinomio(poli);
+        crearNombrePolinomio(in, parametro, i);
+        crearListaTerminos(in, parametro, i);
     }
     else
-        printf("Cantidad de palabras ingresadas no es valida");
+        printf("\nCantidad de palabras ingresadas no es valida\n");
+}
+
+void crearNombrePolinomio(string in, string &nom, int &i) {
+    getSiguiente(in, nom, i);
+    printf("\nEl nombre ingresado del Polinomio es:\n");
+    print(nom);
+}
+
+void crearListaTerminos(string in, string parametro, int &i) {
+    ListaCoeficientes listaTerminos;
+    crearLista(listaTerminos);
+    string termino;
+    while(in[i]!= '\0') {
+        getSiguiente(in, termino, i);
+        printf("\nEl termino ingresado es:\n");
+        print(termino);
+        InsFront(listaTerminos, termino);
+    }
+    Formula form;
+    crearFormula(form);
+    int contGrado = 0;
+    while(listaTerminos != NULL){
+        Termino t;
+        CargarTermino(t, listaTerminos->info, contGrado);
+        insTermino(form, t);
+        listaTerminos = listaTerminos -> sig;
+    }
+    printf("\nLa formula ingresada es: ");
+    MostrarFormula(form);
+    Polinomio poli = crearPolinomio(form,parametro);
+    printf("\nEl Polinomio ingresado es: ");
+    mostrarPolinomio(poli);
+    printf("\n");
 }
 

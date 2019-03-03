@@ -16,5 +16,7 @@ void leerComandoUsuario(string &str); /* Cargar string input del usuario */
 int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
 int seleccionComando(string s); /* Dado un string de comando, devuelve un int con el numero de comando */
 void comandoCrear(string in,string &c); /* Operación del comando Crear */
+void crearNombrePolinomio(string in, string &nom, int &i);
+void crearListaTerminos(string in, string parametro, int &i);
 
 #endif // COMANDOS_H_INCLUDED
