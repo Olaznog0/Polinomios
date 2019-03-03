@@ -1,5 +1,6 @@
 /* Comandos.cpp */
 #include "Comandos.h"
+#include "ABB.h"
 
 void InicioPrograma(string &s) {
     leerComandoUsuario(s);
@@ -90,6 +91,7 @@ void comandoCrear(string in,string &c) {
         int i=strlar(c);
         crearNombrePolinomio(in, parametro, i);
         crearListaTerminos(in, parametro, i);
+
     }
     else
         printf("\nCantidad de palabras ingresadas no es valida\n");
@@ -125,6 +127,11 @@ void crearListaTerminos(string in, string parametro, int &i) {
     Polinomio poli = crearPolinomio(form,parametro);
     printf("\nEl Polinomio ingresado es: ");
     mostrarPolinomio(poli);
+    Arbol a;
+    CrearArbol(a);
+    InsertarPolinomio(a, poli);
+    printf("\nPrueba mostrar polinomios en el arbol: ");
+    ListarOrdenado(a);
     printf("\n");
 }
 

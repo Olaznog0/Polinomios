@@ -753,4 +753,77 @@
 	"string.h"
 
 1551398729 source:c:\users\gamorim\desktop\polinomios-master\termino.cpp
+	"termino.h
+
+1551575698 source:c:\users\federico\desktop\taller 1\polinomios-testeo\boolean.cpp
+	"boolean.h"
+
+1551575698 c:\users\federico\desktop\taller 1\polinomios-testeo\boolean.h
+	<stdio.h>
+
+1551652871 source:c:\users\federico\desktop\taller 1\polinomios-testeo\comandos.cpp
+	"Comandos.h"
+	"ABB.h"
+
+1551575698 c:\users\federico\desktop\taller 1\polinomios-testeo\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"polinomio.h"
+
+1551575698 c:\users\federico\desktop\taller 1\polinomios-testeo\string.h
+	<stdio.h>
+	"boolean.h"
+
+1551575698 c:\users\federico\desktop\taller 1\polinomios-testeo\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
 	"termino.h"
+
+1551652798 c:\users\federico\desktop\taller 1\polinomios-testeo\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1551575698 c:\users\federico\desktop\taller 1\polinomios-testeo\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551652798 c:\users\federico\desktop\taller 1\polinomios-testeo\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1551575698 source:c:\users\federico\desktop\taller 1\polinomios-testeo\formula.cpp
+	"formula.h"
+
+1551575698 source:c:\users\federico\desktop\taller 1\polinomios-testeo\lista.cpp
+	"lista.h"
+
+1551652798 source:c:\users\federico\desktop\taller 1\polinomios-testeo\polinomio.cpp
+	"polinomio.h"
+
+1551575698 source:c:\users\federico\desktop\taller 1\polinomios-testeo\string.cpp
+	"string.h"
+
+1551652798 source:c:\users\federico\desktop\taller 1\polinomios-testeo\termino.cpp
+	"termino.h"
+
+1551652919 source:c:\users\federico\desktop\taller 1\polinomios-testeo\abb.cpp
+	"ABB.h"
+	"polinomio.h"
+
+1551649971 c:\users\federico\desktop\taller 1\polinomios-testeo\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1551650962 source:c:\users\federico\desktop\taller 1\polinomios-testeo\main.cpp
+	<stdio.h>
+	"Comandos.h"
+	"ABB.h"
+

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Comandos.h"
+#include "ABB.h"
 
 int main() {
     string comando;
@@ -11,7 +12,8 @@ int main() {
         InicioPrograma(input);
         getSiguiente(input,comando,i);
         if(seleccionComando(comando)== 1)
-            comandoCrear(input, comando);
+        comandoCrear(input, comando);
+
         else if(seleccionComando(comando)== 2)
             printf("Entro a sumar");
         else if(seleccionComando(comando)== 3)
@@ -34,7 +36,10 @@ int main() {
             printf("\nTiene un error en el nombre del comando, usted escribio: ");
             print(comando);
         }
-    } while (seleccionComando(comando)!= 9);
+        } while (seleccionComando(comando)!= 9);
+
+
+
 
     return 0;
 }
