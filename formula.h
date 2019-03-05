@@ -8,8 +8,6 @@
 #include "termino.h"
 #include "lista.h"
 
-
-
 typedef struct nodoF{
     Termino info;
     nodoF*sig;
