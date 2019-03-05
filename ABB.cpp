@@ -1,5 +1,6 @@
 /* ABB.cpp */
 #include"ABB.h"
+#include"polinomio.h"
 
 /* precondición: el valor no exista previamente en el ABB */
 void CrearArbol (Arbol &a) {
@@ -10,7 +11,7 @@ boolean EsVacio(Arbol a) {
     return (boolean) (a == NULL);
 }
 
-Arbol Constructor (Polinomio r,Arbol i,Arbol d) {
+Arbol Constructor(Polinomio r,Arbol i,Arbol d) {
     Arbol a = new nodo;
     a->info = r;
     a->HIzq = i;
@@ -69,4 +70,14 @@ void Borrar_Minimo (Arbol &a) {
     }
     else
         Borrar_Minimo (a->HIzq);
+}
+
+void ListarOrdenado (Arbol a)
+ {
+    if (a != NULL)
+ {
+    ListarOrdenado (a -> HIzq);
+    printf ("%c", a -> info);
+    ListarOrdenado (a -> HDer);
+ }
 }

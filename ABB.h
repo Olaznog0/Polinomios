@@ -11,7 +11,7 @@ typedef struct nodoA {
     nodoA * HDer;
 } nodo;
 
-typedef nodo *Arbol;
+typedef nodo * Arbol;
 
 void CrearArbol(Arbol &a); /* Crea el arbol */
 boolean EsVacio(Arbol a); /* saber si el árbol está vacío */
@@ -21,6 +21,7 @@ void InsertarPolinomio (Arbol &a, Polinomio e); /* insertar un nuevo valor en el
 boolean Pertenece (Arbol a, Polinomio e); /* saber si un elemento pertenece al ABB, versión recursiva */
 Polinomio Minimo (Arbol a);
 void Borrar_Minimo (Arbol &a); /* algoritmo que borra el valor mínimo del ABB, Precondición : el árbol a  NO está vacío */
+void ListarOrdenado (Arbol a);
 
 
 #endif // ABB_H_INCLUDED

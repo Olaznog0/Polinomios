@@ -22,6 +22,16 @@ void MostrarTermino (Termino t) {
                 printf(" %ld", t.coeficiente);
 }
 
+long int GetCoeficiente (Termino t)
+{
+    return t.coeficiente;
+}
+
+int GetGrado (Termino t)
+{
+    return t.grado;
+}
+
 Termino SumarTerminos (Termino a, Termino b){
 
 

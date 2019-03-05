@@ -14,6 +14,16 @@ void mostrarPolinomio(Polinomio p) {
     MostrarFormula(p.formu);
 }
 
+string GetNombre (Polinomio p)
+{
+    return p.nombre;
+}
+
+Formula GetFormula (Polinomio p)
+{
+    return p.formu;
+}
+
 Polinomio SumarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b) {
 
 }
