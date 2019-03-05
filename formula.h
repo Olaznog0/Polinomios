@@ -6,6 +6,9 @@
 #include "boolean.h"
 #include "string.h"
 #include "termino.h"
+#include "lista.h"
+
+
 
 typedef struct nodoF{
     Termino info;
@@ -21,5 +24,6 @@ int EvaluarFormula(int &a); /* Devuelve el resultado de sustituir x por un numer
 Formula SumarFormulas(Formula a, Formula b); /* Devuelve una formula que es la suma de otras dos */
 Formula MultiplicarFormulas(Formula a, Formula b); /* Devuelve una formula que es el producto de otras dos */
 void insTermino(Formula &f, Termino t);
+void cargarFormulaCrear(string t, string parametro, ListaCoeficientes listaTerminos);
 
 #endif // FORMULA_H_INCLUDED

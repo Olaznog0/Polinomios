@@ -753,4 +753,75 @@
 	"string.h"
 
 1551398729 source:c:\users\gamorim\desktop\polinomios-master\termino.cpp
+	"termino.h
+
+1551448174 source:c:\users\g_amo\documents\github\polinomios\abb.cpp
+	"ABB.h"
+
+1551448174 c:\users\g_amo\documents\github\polinomios\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1551819695 c:\users\g_amo\documents\github\polinomios\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1551819701 c:\users\g_amo\documents\github\polinomios\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
 	"termino.h"
+	"lista.h"
+
+1551448174 c:\users\g_amo\documents\github\polinomios\boolean.h
+	<stdio.h>
+
+1551543352 c:\users\g_amo\documents\github\polinomios\string.h
+	<stdio.h>
+	"boolean.h"
+
+1551448174 c:\users\g_amo\documents\github\polinomios\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1551448174 source:c:\users\g_amo\documents\github\polinomios\boolean.cpp
+	"boolean.h"
+
+1551819713 source:c:\users\g_amo\documents\github\polinomios\formula.cpp
+	"formula.h"
+
+1551543352 source:c:\users\g_amo\documents\github\polinomios\lista.cpp
+	"lista.h"
+
+1551448174 c:\users\g_amo\documents\github\polinomios\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1551812325 source:c:\users\g_amo\documents\github\polinomios\main.cpp
+	<stdio.h>
+	"Comandos.h"
+
+1551813296 c:\users\g_amo\documents\github\polinomios\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"polinomio.h"
+
+1551543352 source:c:\users\g_amo\documents\github\polinomios\polinomio.cpp
+	"polinomio.h"
+
+1551795260 source:c:\users\g_amo\documents\github\polinomios\string.cpp
+	"string.h"
+
+1551819719 source:c:\users\g_amo\documents\github\polinomios\termino.cpp
+	"termino.h"
+
+1551819759 source:c:\users\g_amo\documents\github\polinomios\comandos.cpp
+	"Comandos.h"
+

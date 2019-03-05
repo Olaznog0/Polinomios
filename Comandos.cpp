@@ -81,40 +81,55 @@ int seleccionComando(string s){
     delete com8;
     delete com9;
 }
-void comandoCrear(string in,string &c) {
+
+void comandoCrearOperacion(string in,string &c) {
     if(cantidadPalabras(in) > 2){
-        string parametro;
-        string termino;
-        ListaCoeficientes listaTerminos;
-        int i=strlar(c);
-        getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
-        printf("\nEl nombre ingresado es:\n");
-        print(parametro);
-// hago busqueda de nombre polinomio para verificar que no existe y debo conseguir todos los terminos del usuario
-        crearLista(listaTerminos);
-        while(in[i]!= '\0') {
-            getSiguiente(in, termino, i);
-            printf("\nEl termino ingresado es:\n");
-            print(termino);
-            InsFront(listaTerminos, termino);
-            //VALIDAR
-        }
-        //MostrarLista(listaTerminos);
-        Formula form;
-        crearFormula(form);
-        int contGrado = 0;
-        while(listaTerminos != NULL){
-            Termino t;
-            CargarTermino(t, listaTerminos->info, contGrado);
-            insTermino(form, t);
-            listaTerminos = listaTerminos -> sig;
-        }
-        MostrarFormula(form);
-        printf("\n");
-        Polinomio poli = crearPolinomio(form,parametro);
-        mostrarPolinomio(poli);
+        validarParametro(in, c);
     }
     else
         printf("Cantidad de palabras ingresadas no es valida");
 }
 
+void validarParametro(string in, string c) {
+    int i = 0;
+    string parametro;
+    crearNombre(in, parametro, i);
+}
+
+void crearNombre(string in, string &parametro, int &i) {
+    int largoCrear = 5; // asigno el largo del comando 'crear' a sumar al indice posterior
+    while(in[i] == ' ' && in[i] != '\0')
+        i++;
+    i = i + largoCrear;
+    getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
+    printf("\nEl nombre del polinomio ingresado es:");
+    print(parametro);
+    crearTermino(in,parametro, i);
+}
+
+void crearTermino(string in, string parametro, int &i) {
+    string termino;
+    ListaCoeficientes listaTerminos;
+    crearLista(listaTerminos);
+    while(in[i]!= '\0') {
+        getSiguiente(in, termino, i);
+        printf("\nEl termino ingresado es:\n");
+        print(termino);
+        InsFront(listaTerminos, termino);
+        //VALIDAR
+    }
+    Formula form;
+    crearFormula(form);
+    int contGrado = 0;
+    while(listaTerminos != NULL){
+        Termino t;
+        CargarTermino(t, listaTerminos->info, contGrado);
+        insTermino(form, t);
+        listaTerminos = listaTerminos -> sig;
+    }
+    MostrarFormula(form);
+    printf("\n");
+    Polinomio poli = crearPolinomio(form,parametro);
+    mostrarPolinomio(poli);
+
+}

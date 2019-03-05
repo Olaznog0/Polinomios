@@ -1,8 +1,6 @@
 /* termino.cpp */
 #include "termino.h"
 
-
-
 void CargarTermino (Termino &t, string a, int &i){
     t.grado = i;
     t.coeficiente = atoi(a);

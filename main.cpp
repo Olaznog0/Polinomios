@@ -10,7 +10,7 @@ int main() {
         InicioPrograma(input);
         getSiguiente(input,comando,i);
         if(seleccionComando(comando)== 1)
-            comandoCrear(input, comando);
+            comandoCrearOperacion(input, comando);
         else if(seleccionComando(comando)== 2)
             printf("Entro a sumar");
         else if(seleccionComando(comando)== 3)
@@ -32,7 +32,7 @@ int main() {
             print(comando);
         }
     } while (seleccionComando(comando)!= 9);
-    
+
     return 0;
 }
 
