@@ -1,8 +1,6 @@
 /* termino.cpp */
 #include "termino.h"
 
-
-
 void CargarTermino (Termino &t, string a, int &i){
     t.grado = i;
     t.coeficiente = atoi(a);
@@ -20,16 +18,6 @@ void MostrarTermino (Termino t) {
         else
             if (t.grado == 0 && t.coeficiente != 0)
                 printf(" %ld", t.coeficiente);
-}
-
-long int GetCoeficiente (Termino t)
-{
-    return t.coeficiente;
-}
-
-int GetGrado (Termino t)
-{
-    return t.grado;
 }
 
 Termino SumarTerminos (Termino a, Termino b){

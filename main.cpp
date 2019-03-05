@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include "Comandos.h"
-#include "ABB.h"
 
 int main() {
     string comando;
     string input;
-    IniciarPantalla();
+
     do {
-        print("\nIngrese comando: ");
         int i=0;
         InicioPrograma(input);
         getSiguiente(input,comando,i);
         if(seleccionComando(comando)== 1)
-        comandoCrear(input, comando);
-
+            comandoCrearOperacion(input, comando);
         else if(seleccionComando(comando)== 2)
             printf("Entro a sumar");
         else if(seleccionComando(comando)== 3)
@@ -29,17 +26,12 @@ int main() {
         else if(seleccionComando(comando)== 8)
             printf("Entro a recuperar");
         else if(seleccionComando(comando)== 9)
-            printf("\n*****\tHasta Luego!\t*****\n");
-        else if(seleccionComando(comando)== 10)
-            IniciarPantalla();
-        else if(seleccionComando(comando)== 11){
+            printf("Hasta Luego!");
+        else if(seleccionComando(comando)== 10){
             printf("\nTiene un error en el nombre del comando, usted escribio: ");
             print(comando);
         }
-        } while (seleccionComando(comando)!= 9);
-
-
-
+    } while (seleccionComando(comando)!= 9);
 
     return 0;
 }
