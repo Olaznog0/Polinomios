@@ -29,3 +29,11 @@ Termino MultiplicarTerminos (Termino a, Termino b){
 
 
 }
+
+long int GetCoeficiente (Termino t) {
+    return t.coeficiente;
+}
+
+int GetGrado (Termino t) {
+    return t.grado;
+}

@@ -5,6 +5,7 @@ int main() {
     string comando;
     string input;
 
+    IniciarPantalla();
     do {
         int i=0;
         InicioPrograma(input);
@@ -26,9 +27,11 @@ int main() {
         else if(seleccionComando(comando)== 8)
             printf("Entro a recuperar");
         else if(seleccionComando(comando)== 9)
-            printf("Hasta Luego!");
-        else if(seleccionComando(comando)== 10){
-            printf("\nTiene un error en el nombre del comando, usted escribio: ");
+            printf("\n*****\tHasta Luego!\t*****\n");
+        else if(seleccionComando(comando)== 10)
+            IniciarPantalla();
+        else if(seleccionComando(comando)== 11){
+            printf("\nTiene un error en el nombre del comando, usted escribio: \n");
             print(comando);
         }
     } while (seleccionComando(comando)!= 9);

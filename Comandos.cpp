@@ -2,13 +2,12 @@
 #include "Comandos.h"
 
 void InicioPrograma(string &s) {
-    IniciarPantalla();
     leerComandoUsuario(s);
 }
 
 void IniciarPantalla() {
     printf("\n\tBienvenido al programa.");
-    printf("\n\tIngrese un Comando para continuar.\n");
+    printf("\n\tIngrese un Comando para continuar. Para repetir el menu presione :menu\n");
     printf("\n1- Crear: crea un nuevo polinomio especificando todos sus coeficientes");
     printf("\n2- Sumar: realiza la suma de dos polinomios, creando uno nuevo como resultado");
     printf("\n3- Multiplicar: realiza la multiplicacion de dos polinomios, creando uno nuevo como resultado");
@@ -18,7 +17,7 @@ void IniciarPantalla() {
     printf("\n7- Guardar: guarda en archivo un polinomio existente en memoria");
     printf("\n8- Recuperar: recupera a memoria un polinomio previamente guardado en archivo");
     printf("\n9- Salir: abandona la aplicacion\n\n");
-    print("Ingrese comando: ");
+    printf("Ingrese comando: ");
 }
 
 void leerComandoUsuario(string &input) {
@@ -36,6 +35,7 @@ int seleccionComando(string s){
     string com7= "guardar";
     string com8= "recuperar";
     string com9= "salir";
+    string com10= "menu";
     int b;
     // Convierto el string del usuario a lowercase para verificar
     for(int i = 0; s[i]; i++)
@@ -68,8 +68,10 @@ int seleccionComando(string s){
         if(streq(com9,s))
             b = 9;
     else
-        b = 10;
-
+        if(streq(com10,s))
+            b = 10;
+    else
+        b = 11;
     return b;
     delete com1;
     delete com2;
@@ -80,6 +82,7 @@ int seleccionComando(string s){
     delete com7;
     delete com8;
     delete com9;
+    delete com10;
 }
 
 void comandoCrearOperacion(string in,string &c) {
@@ -127,9 +130,10 @@ void crearTermino(string in, string parametro, int &i) {
         insTermino(form, t);
         listaTerminos = listaTerminos -> sig;
     }
+    printf("\nLa Formula ingresada es: \n");
     MostrarFormula(form);
-    printf("\n");
     Polinomio poli = crearPolinomio(form,parametro);
+    printf("\nEl Polinomio ingresado es: \n");
     mostrarPolinomio(poli);
-
+    printf("\n\nEscriba un comando para continuar: ");
 }

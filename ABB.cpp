@@ -1,5 +1,6 @@
 /* ABB.cpp */
 #include"ABB.h"
+#include"polinomio.h"
 
 /* precondición: el valor no exista previamente en el ABB */
 void CrearArbol (Arbol &a) {
@@ -16,6 +17,14 @@ Arbol Constructor (Polinomio r,Arbol i,Arbol d) {
     a->HIzq = i;
     a->HDer = d;
     return a;
+}
+
+void ListarOrdenado (Arbol a) {
+    if (a != NULL) {
+        ListarOrdenado (a -> HIzq);
+        printf ("%c", a -> info);
+        ListarOrdenado (a -> HDer);
+    }
 }
 
 /* Precondición: Arbol NO vacío */

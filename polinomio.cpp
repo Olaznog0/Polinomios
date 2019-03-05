@@ -21,3 +21,12 @@ Polinomio SumarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b) {
 Polinomio multiplicarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b) {
 
 }
+
+string GetNombre (Polinomio p) {
+    return p.nombre;
+}
+
+Formula GetFormula (Polinomio p) {
+    return p.formu;
+}
+
