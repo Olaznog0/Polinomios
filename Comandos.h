@@ -22,8 +22,8 @@ void crearTermino(string in, string parametro, int i, Arbol &a);
 void comandoCrearPolinomio(string in, Arbol &a, int i); /* Operación del comando Crear */
 void comandoMostrar(Arbol a);
 
-void sumarComando(string in, Arbol &a);
-void multiplicarComando(string in, Arbol &a);
+void sumarComando(string in, Arbol &a, int i);
+void multiplicarComando(string in, Arbol &a, int i);
 
 void evaluarComando (string input, Arbol a);
 void esraizComando (string input, Arbol a);

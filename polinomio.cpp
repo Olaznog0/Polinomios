@@ -22,6 +22,7 @@ Formula SumarPolinomios(Formula sumando1, Formula sumando2) {
     aux2 = sumando2;
     Termino t1;
     Termino t2;
+
     while(aux1 != NULL || aux2 != NULL) {
         if(aux1 == NULL) {
             t2 = aux2->info;
