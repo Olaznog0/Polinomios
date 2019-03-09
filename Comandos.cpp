@@ -167,7 +167,6 @@ void sumarComando(string in, Arbol &a, int i) {
      }
 }
 
-
 void multiplicarComando(string in, Arbol &a, int i) {
      if(cantidadPalabras(in) != 4)
         printf("\nLa multiplicacion precisa 3 parametros\n");
@@ -205,4 +204,3 @@ void multiplicarComando(string in, Arbol &a, int i) {
         InsertarPolinomio(a, resultadoPol);
      }
 }
-
