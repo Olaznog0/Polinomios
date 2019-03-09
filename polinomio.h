@@ -12,8 +12,8 @@ typedef struct {
 
 Polinomio crearPolinomio(Formula f,string s); /* Crear un polinomio desde un string */
 void mostrarPolinomio(Polinomio p); /* Muestra Polinomio */
-Polinomio SumarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b); /* Suma un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
-Polinomio multiplicarPolinomio(Polinomio &nuevoPol, Polinomio a, Polinomio b); /* Multiplica un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
+Formula SumarPolinomios(Formula sumando1, Formula sumando2); /* Suma un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
+Formula multiplicarPolinomio(Formula mult1, Formula mult2); /* Multiplica un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
 string GetNombre (Polinomio p);
 Formula GetFormula (Polinomio p);
 

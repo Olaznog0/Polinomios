@@ -82,6 +82,18 @@ void strcop (string &s1,string s2) {
 	s1[i] = '\0';
 }
 
+void strncop (string &s1,string s2, int n) {
+	int i = 0;
+	int j = n;
+	while (s2[j] != '\0') {
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	s1[i] = '\0';
+}
+
+
 void strcon (string &s1,string s2) {
 	string aux;
 	strcrear (aux);
@@ -126,18 +138,42 @@ void getSiguiente(string s, string &g, int &i) {
      g[j]='\0';
 }
 
-int cantidadPalabras (string str) {
-    int cont = ocurre(str,' ');
-    return (cont+1);
+string getToken(string s, string &g) {
+    int i = 0;
+    string aux = new char[MAX];
+    aux[0] = '\0';
+    while(s[i] == ' ' && s[i]!='\0')
+         i++;
+    int j = 0;
+    g = new char[MAX];
+    while (s[i] != ' ' && s[i] !='\0') {
+        g[j]=s[i];
+        i++;
+        j++;
+    }
+     g[j]='\0';
+     strncop(aux, s, i);
+     return aux;
 }
 
-int ocurre (string str, char c) {
-    int i = 0,
-    cont = 0;
+int cantidadPalabras (string str) {
+    int i = 0;
+    int cantPalabras = 0;
+    boolean EstoyEnPalabra = FALSE;
+
     while (str[i] != '\0') {
-        if (str[i] == c)
-            cont++;
+        if(str[i] == ' ') {
+            if(EstoyEnPalabra) {
+                cantPalabras ++;
+                EstoyEnPalabra = FALSE;
+            }
+        }
+        else
+            EstoyEnPalabra = TRUE;
         i++;
     }
-    return cont;
+    cantPalabras++;
+
+    return cantPalabras;
 }
+

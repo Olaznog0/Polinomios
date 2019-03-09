@@ -21,7 +21,9 @@ int GradoFormula(Formula a); /* Devuelve el grado de una Formula */
 int EvaluarFormula(int &a); /* Devuelve el resultado de sustituir x por un numero */
 Formula SumarFormulas(Formula a, Formula b); /* Devuelve una formula que es la suma de otras dos */
 Formula MultiplicarFormulas(Formula a, Formula b); /* Devuelve una formula que es el producto de otras dos */
-void insTermino(Formula &f, Termino t);
+void insTerminoPrincipio(Formula &f, Termino t);
+void insTerminoAlFinal(Formula &f, Termino t);
+void insTerminoOrdenado(Formula &f, Termino t);
 void cargarFormulaCrear(string t, string parametro, ListaCoeficientes listaTerminos);
 
 #endif // FORMULA_H_INCLUDED

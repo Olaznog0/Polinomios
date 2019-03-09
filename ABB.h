@@ -19,9 +19,11 @@ Arbol Constructor (Polinomio r,Arbol i,Arbol d); /* dados dos árboles y un valor
 Polinomio DarRaiz (Arbol a); /* devolver la raíz del árbol, precondición: Arbol NO vacío */
 void InsertarPolinomio (Arbol &a, Polinomio e); /* insertar un nuevo valor en el ABB, precondición: el valor no exista previamente en el ABB */
 boolean Pertenece (Arbol a, Polinomio e); /* saber si un elemento pertenece al ABB, versión recursiva */
-Polinomio Minimo (Arbol a);
+Polinomio busquedaPolinomio (Arbol a, string n);
+boolean ExistePolinomio (Arbol a, string n);
 void Borrar_Minimo (Arbol &a); /* algoritmo que borra el valor mínimo del ABB, Precondición : el árbol a  NO está vacío */
 void ListarOrdenado (Arbol a);
+void mostrarArbol(Arbol a);
 
 
 #endif // ABB_H_INCLUDED
