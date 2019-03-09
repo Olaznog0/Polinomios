@@ -138,6 +138,8 @@ void getSiguiente(string s, string &g, int &i) {
      g[j]='\0';
 }
 
+
+
 string getToken(string s, string &g) {
     int i = 0;
     string aux = new char[MAX];
@@ -177,3 +179,15 @@ int cantidadPalabras (string str) {
     return cantPalabras;
 }
 
+void getComando(string s,string &g,int i){
+    while(s[i] == ' ' && s[i]!='\0')
+         i++;
+    int j = 0;
+    g = new char[MAX];
+    while (s[i] != ' ' && s[i] !='\0') {
+        g[j]=s[i];
+        i++;
+        j++;
+    }
+     g[j]='\0';
+}

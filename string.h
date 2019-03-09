@@ -24,5 +24,6 @@ void getSiguiente(string s,string &g,int &i); /*Devuelve la siguiente palabra de
 int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
  /* Cuenta la cantidad de ocurrencias de char, en este caso de espacios ' ' en el input del usuario */
 string getToken(string s, string &g);
+void getComando(string s,string &g,int i);
 
 #endif

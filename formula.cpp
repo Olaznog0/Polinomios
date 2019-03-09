@@ -87,3 +87,10 @@ void insTerminoOrdenado(Formula &f, Termino t) {
         }
     }
 }*/
+
+
+Termino getTermino(Formula f){
+    Termino t = f -> info;
+    return t;
+
+}

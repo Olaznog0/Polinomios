@@ -896,3 +896,74 @@
 1551882253 source:c:\users\gamorim\desktop\polinomios-staging\termino.cpp
 	"termino.h"
 
+1552149719 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\abb.cpp
+	"ABB.h"
+	"polinomio.h"
+
+1552149719 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1552172142 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1552164757 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+	"lista.h"
+
+1552149719 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\boolean.h
+	<stdio.h>
+
+1552169092 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\string.h
+	<stdio.h>
+	"boolean.h"
+
+1552172142 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1552149719 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1552149719 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\boolean.cpp
+	"boolean.h"
+
+1552172250 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\comandos.cpp
+	"Comandos.h"
+
+1552172142 c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"ABB.h"
+
+1552164757 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\formula.cpp
+	"formula.h"
+
+1552149719 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\lista.cpp
+	"lista.h"
+
+1552170625 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\main.cpp
+	<stdio.h>
+	"Comandos.h"
+
+1552172142 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\polinomio.cpp
+	"polinomio.h"
+
+1552169092 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\string.cpp
+	"string.h"
+
+1552166235 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\termino.cpp
+	"termino.h"
+

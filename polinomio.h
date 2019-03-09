@@ -16,5 +16,6 @@ Formula SumarPolinomios(Formula sumando1, Formula sumando2); /* Suma un polinomi
 Formula multiplicarPolinomio(Formula mult1, Formula mult2); /* Multiplica un polinomio a partir de dos polinomios existentes y crea uno nuevo en memoria */
 string GetNombre (Polinomio p);
 Formula GetFormula (Polinomio p);
+int evaluarPolinomio (Polinomio p, int eval);
 
 #endif // POLINOMIO_H_INCLUDED
