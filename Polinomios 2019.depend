@@ -847,7 +847,7 @@
 1551882253 c:\users\gamorim\desktop\polinomios-staging\boolean.h
 	<stdio.h>
 
-1552140558 c:\users\gamorim\desktop\polinomios-staging\string.h
+1552171404 c:\users\gamorim\desktop\polinomios-staging\string.h
 	<stdio.h>
 	"boolean.h"
 
@@ -866,10 +866,10 @@
 1551882253 source:c:\users\gamorim\desktop\polinomios-staging\boolean.cpp
 	"boolean.h"
 
-1552148552 source:c:\users\gamorim\desktop\polinomios-staging\comandos.cpp
+1552171493 source:c:\users\gamorim\desktop\polinomios-staging\comandos.cpp
 	"Comandos.h"
 
-1552147851 c:\users\gamorim\desktop\polinomios-staging\comandos.h
+1552171581 c:\users\gamorim\desktop\polinomios-staging\comandos.h
 	<stdio.h>
 	"string.h"
 	<ctype.h>
@@ -883,14 +883,14 @@
 1551882253 source:c:\users\gamorim\desktop\polinomios-staging\lista.cpp
 	"lista.h"
 
-1552148636 source:c:\users\gamorim\desktop\polinomios-staging\main.cpp
+1552171586 source:c:\users\gamorim\desktop\polinomios-staging\main.cpp
 	<stdio.h>
 	"Comandos.h"
 
-1552148709 source:c:\users\gamorim\desktop\polinomios-staging\polinomio.cpp
+1552163156 source:c:\users\gamorim\desktop\polinomios-staging\polinomio.cpp
 	"polinomio.h"
 
-1552140617 source:c:\users\gamorim\desktop\polinomios-staging\string.cpp
+1552171335 source:c:\users\gamorim\desktop\polinomios-staging\string.cpp
 	"string.h"
 
 1551882253 source:c:\users\gamorim\desktop\polinomios-staging\termino.cpp

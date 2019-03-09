@@ -15,14 +15,14 @@ void IniciarPantalla(); /* Inicio de pantalla */
 void leerComandoUsuario(string &str); /* Cargar string input del usuario */
 int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
 int seleccionComando(string s); /* Dado un string de comando, devuelve un int con el numero de comando */
-void validarParametro(string in, Arbol &a);
-void crearNombre(string in, string &parametro, int &i, Arbol &a);
-void crearTermino(string in, string parametro, int &i, Arbol &a);
+void validarParametro(string in, Arbol &a, int i);
+void crearNombre(string in, string &parametro, int i, Arbol &a);
+void crearTermino(string in, string parametro, int i, Arbol &a);
 
-void comandoCrearPolinomio(string in, Arbol &a); /* Operación del comando Crear */
+void comandoCrearPolinomio(string in, Arbol &a, int i); /* Operación del comando Crear */
 void comandoMostrar(Arbol a);
 
-void sumarComando(string in, Arbol &a);
-void multiplicarComando(string in, Arbol &a);
+void sumarComando(string in, Arbol &a, int i);
+void multiplicarComando(string in, Arbol &a, int i);
 
 #endif // COMANDOS_H_INCLUDED

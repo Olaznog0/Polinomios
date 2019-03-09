@@ -74,28 +74,28 @@ int seleccionComando(string s){
     return b;
 }
 
-void comandoCrearPolinomio(string in, Arbol &a) {
-    if(cantidadPalabras(in) > 1){
-        validarParametro(in, a);
+void comandoCrearPolinomio(string in, Arbol &a, int i) {
+    if(cantidadPalabras(in) > 2){
+        validarParametro(in, a, i);
     }
     else
         printf("Cantidad de palabras ingresadas no es valida");
 }
 
-void validarParametro(string in, Arbol &a) {
-    int i = 0;
+void validarParametro(string in, Arbol &a, int i) {
     string parametro;
+    strcrear(parametro);
     crearNombre(in, parametro, i, a);
 }
 
-void crearNombre(string in, string &parametro, int &i, Arbol &a) {
+void crearNombre(string in, string &parametro, int i, Arbol &a) {
     getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
     printf("\nEl nombre del polinomio ingresado es:");
     print(parametro);
     crearTermino(in,parametro, i, a);
 }
 
-void crearTermino(string in, string parametro, int &i, Arbol &a) {
+void crearTermino(string in, string parametro, int i, Arbol &a) {
     string termino;
     ListaCoeficientes listaTerminos;
     crearLista(listaTerminos);
@@ -129,8 +129,8 @@ void comandoMostrar(Arbol a) {
     mostrarArbol(a);
 }
 
-void sumarComando(string in, Arbol &a) {
-     if(cantidadPalabras(in) != 3)
+void sumarComando(string in, Arbol &a, int i) {
+     if(cantidadPalabras(in) != 4)
         printf("\nLa suma precisa 3 parametros\n");
      else {
         string resultado, sumando1, sumando2;
@@ -138,21 +138,21 @@ void sumarComando(string in, Arbol &a) {
         strcrear(sumando1);
         strcrear(sumando2);
 
-        in = getToken(in, resultado);
-        in = getToken(in, sumando1);
-        in = getToken(in, sumando2);
+        getSiguiente(in, resultado, i);
+        getSiguiente(in, sumando1, i);
+        getSiguiente(in, sumando2, i);
 
         Polinomio resultadoPol;
         Polinomio sumandoPol1;
         Polinomio sumandoPol2;
 
         if(!ExistePolinomio(a, sumando1)) {
-            printf("El nombre del polinomio %s no se encuentra", sumando1);
+            printf("\nEl nombre del polinomio %s no se encuentra", sumando1);
             return;
         }
 
         if(!ExistePolinomio(a, sumando2)) {
-            printf("El nombre del polinomio %s no se encuentra", sumando2);
+            printf("\nEl nombre del polinomio %s no se encuentra", sumando2);
             return;
         }
 
@@ -160,6 +160,7 @@ void sumarComando(string in, Arbol &a) {
         sumandoPol2 = busquedaPolinomio(a, sumando2);
         Formula f;
         f = SumarPolinomios(GetFormula(sumandoPol1), GetFormula(sumandoPol2));
+        printf("\nEl resultado es:");
         MostrarFormula(f);
         resultadoPol = crearPolinomio(f, resultado);
         InsertarPolinomio(a, resultadoPol);
@@ -167,8 +168,8 @@ void sumarComando(string in, Arbol &a) {
 }
 
 
-void multiplicarComando(string in, Arbol &a) {
-     if(cantidadPalabras(in) != 3)
+void multiplicarComando(string in, Arbol &a, int i) {
+     if(cantidadPalabras(in) != 4)
         printf("\nLa multiplicacion precisa 3 parametros\n");
      else {
         string resultado, mult1, mult2;
@@ -176,9 +177,9 @@ void multiplicarComando(string in, Arbol &a) {
         strcrear(mult1);
         strcrear(mult2);
 
-        in = getToken(in, resultado);
-        in = getToken(in, mult1);
-        in = getToken(in, mult2);
+        getSiguiente(in, resultado, i);
+        getSiguiente(in, mult1, i);
+        getSiguiente(in, mult2, i);
 
         Polinomio resultadoPol;
         Polinomio PolMult1;
@@ -198,6 +199,7 @@ void multiplicarComando(string in, Arbol &a) {
         PolMult2 = busquedaPolinomio(a, mult2);
         Formula f;
         f = multiplicarPolinomio(GetFormula(PolMult1), GetFormula(PolMult2));
+        printf("\nEl resultado es:");
         MostrarFormula(f);
         resultadoPol = crearPolinomio(f, resultado);
         InsertarPolinomio(a, resultadoPol);

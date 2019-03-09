@@ -13,13 +13,13 @@ int main() {
         printf("\nIngrese un nuevo comando para continuar: ");
         int i=0;
         SolicitarInput(input);
-        input = getToken(input,comando);
+        getSiguiente(input, comando, i);
         if(seleccionComando(comando)== 1)
-            comandoCrearPolinomio(input, a);
+            comandoCrearPolinomio(input, a, i);
         else if(seleccionComando(comando)== 2)
-            sumarComando(input, a);
+            sumarComando(input, a, i);
         else if(seleccionComando(comando)== 3)
-            multiplicarComando(input, a);
+            multiplicarComando(input, a, i);
         else if(seleccionComando(comando)== 4)
             printf("Entro a evaluar");
         else if(seleccionComando(comando)== 5)
