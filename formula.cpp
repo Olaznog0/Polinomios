@@ -49,3 +49,9 @@ void insTerminoAlFinal(Formula &f, Termino t) {
         aux ->sig = nodof;
     }
 }
+
+Termino getTermino(Formula f){
+    Termino t = f -> info;
+    return t;
+
+}

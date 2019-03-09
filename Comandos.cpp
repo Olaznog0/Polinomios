@@ -204,3 +204,43 @@ void multiplicarComando(string in, Arbol &a, int i) {
         InsertarPolinomio(a, resultadoPol);
      }
 }
+void evaluarComando (string input, Arbol a){
+    int i=0;
+    string comando, name, control;
+    strcrear(comando);
+    getSiguiente(input, comando, i);
+    strcrear(name);
+
+    getSiguiente(input, name, i);
+    strcrear(control);
+    getSiguiente(input, control, i);
+    int numero = atoi(control);
+
+
+    Polinomio poli = busquedaPolinomio(a, name);
+    int resultado =evaluarPolinomio(poli, numero);
+    printf("El reslultado de evaluar el polinomio con %d es:\t%d",numero ,resultado);
+
+}
+
+void esraizComando (string input, Arbol a){
+    int i=0;
+    string comando, name, control;
+    strcrear(comando);
+    getSiguiente(input, comando, i);
+    strcrear(name);
+
+    getSiguiente(input, name, i);
+    strcrear(control);
+    getSiguiente(input, control, i);
+    int numero = atoi(control);
+
+
+    Polinomio poli = busquedaPolinomio(a, name);
+    int resultado =evaluarPolinomio(poli, numero);
+    if(resultado == 0)
+        printf("El numero es raiz");
+    else
+        printf("El numero no es raiz");
+
+}

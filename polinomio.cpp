@@ -89,3 +89,34 @@ string GetNombre (Polinomio p) {
 Formula GetFormula (Polinomio p) {
     return p.formu;
 }
+
+int evaluarPolinomio(Polinomio p,int eval){
+    Formula f = GetFormula(p);
+    int resu = 0;
+    while(f != NULL){
+        resu = resu + evaluarTermino(getTermino(f), eval);
+        f = f -> sig;
+    }
+    return resu;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

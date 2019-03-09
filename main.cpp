@@ -21,9 +21,11 @@ int main() {
         else if(seleccionComando(comando)== 3)
             multiplicarComando(input, a, i);
         else if(seleccionComando(comando)== 4)
-            printf("Entro a evaluar");
+
+            evaluarComando(input, a);
+
         else if(seleccionComando(comando)== 5)
-            printf("Entro a es raiz");
+            esraizComando(input, a);
         else if(seleccionComando(comando)== 6)
             comandoMostrar(a);
         else if(seleccionComando(comando)== 7)

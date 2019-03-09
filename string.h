@@ -8,12 +8,12 @@
 const int MAX = 80;
 typedef char * string;
 
-void strcrear (string &s); /* Crea un string vacío */
+void strcrear (string &s); /* Crea un string vacÃ­o */
 void strdestruir (string &s); /* Libera la memoria usada por el string */
 int strlar (string s); /* Devuelve el largo del string s */
 void print (string s); /* Imprime el string s por pantalla */
 void scan (string &s); /* Lee el string s desde teclado */
-boolean strmen (string s1, string s2); /* Determina si s1 es alfabéticamente menor que s2 */
+boolean strmen (string s1, string s2); /* Determina si s1 es alfabÃ©ticamente menor que s2 */
 boolean streq (string s1, string s2); /* Determina si los strings s1 y s2 son iguales */
 void strcop (string &s1, string s2); /* Copia el contenido del string s2 en s1 */
 void strcon (string &s1, string s2); /* Concatena el contenido de s2 al final de s1 */

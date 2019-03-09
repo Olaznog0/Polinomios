@@ -25,4 +25,7 @@ void comandoMostrar(Arbol a);
 void sumarComando(string in, Arbol &a, int i);
 void multiplicarComando(string in, Arbol &a, int i);
 
+void evaluarComando (string input, Arbol a);
+void esraizComando (string input, Arbol a);
+
 #endif // COMANDOS_H_INCLUDED
