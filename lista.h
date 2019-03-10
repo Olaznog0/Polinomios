@@ -14,7 +14,6 @@ typedef struct nodoL{
 typedef NodoJ *ListaCoeficientes;
 
 void crearLista (ListaCoeficientes & lis);
-void partirComando (string comando, ListaCoeficientes &l);
 boolean Vacia (ListaCoeficientes lis);
 void CargarLista(string g); /* Carga formula desde un string */
 void MostrarLista(ListaCoeficientes l); /* Muestra por pantalla la lista de terminos que comprende la formula */

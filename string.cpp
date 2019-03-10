@@ -127,17 +127,35 @@ void getSiguiente(string s, string &g, int &i) {
 }
 
 int cantidadPalabras (string str) {
-    int cont = ocurre(str,' ');
-    return (cont+1);
-}
+    int i = 0;
+    int cantPalabras = 0;
+    boolean EstoyEnPalabra = FALSE;
 
-int ocurre (string str, char c) {
-    int i = 0,
-    cont = 0;
     while (str[i] != '\0') {
-        if (str[i] == c)
-            cont++;
+        if(str[i] == ' ') {
+            if(EstoyEnPalabra) {
+                cantPalabras++;
+                EstoyEnPalabra = FALSE;
+            }
+        }
+        else
+            EstoyEnPalabra = TRUE;
         i++;
     }
-    return cont;
+    cantPalabras++;
+
+    return cantPalabras;
+}
+
+void getComando(string s,string &g,int i){
+    while(s[i] == ' ' && s[i]!='\0')
+         i++;
+    int j = 0;
+    g = new char[MAX];
+    while (s[i] != ' ' && s[i] !='\0') {
+        g[j]=s[i];
+        i++;
+        j++;
+    }
+     g[j]='\0';
 }

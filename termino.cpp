@@ -20,20 +20,21 @@ void MostrarTermino (Termino t) {
                 printf(" %ld", t.coeficiente);
 }
 
-Termino SumarTerminos (Termino a, Termino b){
-
-
-}
-
-Termino MultiplicarTerminos (Termino a, Termino b){
-
-
-}
-
-long int GetCoeficiente (Termino t) {
+int GetCoeficiente (Termino t) {
     return t.coeficiente;
 }
 
 int GetGrado (Termino t) {
     return t.grado;
+}
+int evaluarTermino(Termino t, int eval){
+    int coef = t.coeficiente;
+    int grad = t.grado;
+    int res = 1;
+    int i;
+
+    for(i=0; i<grad; i++)
+        res = res * eval;
+    res = res * coef;
+    return res;
 }
