@@ -157,7 +157,7 @@ void evaluarComando (string input, Arbol a){
 
     Polinomio poli = busquedaPolinomio(a, name);
     int resultado =evaluarPolinomio(poli, numero);
-    printf("\nEl resultado de evaluar el polinomio con %d es:\t%d", numero ,resultado);
+    printf("\nEl resultado de evaluar el polinomio con %d es:\t%d\n", numero ,resultado);
 
 }
 
@@ -176,8 +176,8 @@ void esraizComando (string input, Arbol a){
     Polinomio poli = busquedaPolinomio(a, name);
     int resultado = evaluarPolinomio(poli, numero);
     if(resultado == 0)
-        printf("\nEl numero %d es raiz", numero);
+        printf("\nEl numero %d es raiz\n", numero);
     else
-        printf("\nEl numero %d no es raiz", numero);
+        printf("\nEl numero %d no es raiz\n", numero);
 
 }
