@@ -989,7 +989,7 @@
 1552173644 c:\users\g_amo\desktop\polinomios-staging\boolean.h
 	<stdio.h>
 
-1552173644 c:\users\g_amo\desktop\polinomios-staging\string.h
+1552228856 c:\users\g_amo\desktop\polinomios-staging\string.h
 	<stdio.h>
 	"boolean.h"
 
@@ -1008,10 +1008,10 @@
 1552173644 source:c:\users\g_amo\desktop\polinomios-staging\boolean.cpp
 	"boolean.h"
 
-1552177283 source:c:\users\g_amo\desktop\polinomios-staging\comandos.cpp
+1552230540 source:c:\users\g_amo\desktop\polinomios-staging\comandos.cpp
 	"Comandos.h"
 
-1552173644 c:\users\g_amo\desktop\polinomios-staging\comandos.h
+1552230647 c:\users\g_amo\desktop\polinomios-staging\comandos.h
 	<stdio.h>
 	"string.h"
 	<ctype.h>
@@ -1025,16 +1025,23 @@
 1552173644 source:c:\users\g_amo\desktop\polinomios-staging\lista.cpp
 	"lista.h"
 
-1552176707 source:c:\users\g_amo\desktop\polinomios-staging\main.cpp
+1552228702 source:c:\users\g_amo\desktop\polinomios-staging\main.cpp
 	<stdio.h>
-	"Comandos.h"
+	"InicioSelectoras.h"
 
-1552173644 source:c:\users\g_amo\desktop\polinomios-staging\polinomio.cpp
+1552178754 source:c:\users\g_amo\desktop\polinomios-staging\polinomio.cpp
 	"polinomio.h"
 
-1552173644 source:c:\users\g_amo\desktop\polinomios-staging\string.cpp
+1552178960 source:c:\users\g_amo\desktop\polinomios-staging\string.cpp
 	"string.h"
 
 1552173644 source:c:\users\g_amo\desktop\polinomios-staging\termino.cpp
 	"termino.h"
+
+1552231407 source:c:\users\g_amo\desktop\polinomios-staging\inicioselectoras.cpp
+	"InicioSelectoras.h"
+
+1552230536 c:\users\g_amo\desktop\polinomios-staging\inicioselectoras.h
+	<stdio.h>
+	"Comandos.h"
 

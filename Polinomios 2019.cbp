@@ -36,6 +36,8 @@
 		<Unit filename="ABB.h" />
 		<Unit filename="Comandos.cpp" />
 		<Unit filename="Comandos.h" />
+		<Unit filename="InicioSelectoras.cpp" />
+		<Unit filename="InicioSelectoras.h" />
 		<Unit filename="boolean.cpp" />
 		<Unit filename="boolean.h" />
 		<Unit filename="formula.cpp" />
