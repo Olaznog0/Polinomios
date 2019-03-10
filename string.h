@@ -21,4 +21,5 @@ void strswp (string &s1, string &s2); /* Intercambia los contenidos de s1 y s2 *
 void getSiguiente(string s,string &g,int &i); /*Devuelve la siguiente palabra del string */
 int cantidadPalabras (string str); /* Cuenta la cantidad de palabras en el input del usuario */
 
+
 #endif
