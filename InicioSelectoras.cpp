@@ -55,14 +55,14 @@ void IniciarPantalla() {
 
 void SintaxisComando() {
     printf("\nSintaxis de los Comandos, panel de ayuda:\n");
-    printf("\n\tSintaxis Comando Crear -> crear nombre termino1 termino2 terminoN");
-    printf("\n\tSintaxis Comando Sumar -> sumar nombreNuevo nombre1 nombre2");
-    printf("\n\tSintaxis Comando Multiplicar -> multiplicar nombreNuevo nombre1 nombre2");
-    printf("\n\tSintaxis Comando Evaluar -> evaluar nombre numeroEntero");
-    printf("\n\tSintaxis Comando EsRaiz -> esraiz nombre numeroEntero");
-    printf("\n\tSintaxis Comando Mostrar -> mostrar");
-    printf("\n\tSintaxis Comando Guardar -> guardar nombre nombreArchivo.txt");
-    printf("\n\tSintaxis Comando Recuperar -> recuperar nombreArchivo.txt\n");
+    printf("\n\tCrear -> crear nombre termino1 termino2 terminoN");
+    printf("\n\tSumar -> sumar nombreNuevo nombre1 nombre2");
+    printf("\n\tMultiplicar -> multiplicar nombreNuevo nombre1 nombre2");
+    printf("\n\tEvaluar -> evaluar nombre numeroEntero");
+    printf("\n\tEsRaiz -> esraiz nombre numeroEntero");
+    printf("\n\tMostrar -> mostrar");
+    printf("\n\tGuardar -> guardar nombre nombreArchivo.txt");
+    printf("\n\tRecuperar -> recuperar nombreArchivo.txt\n");
 }
 
 int seleccionComando(string s){
