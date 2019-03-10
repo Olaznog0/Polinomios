@@ -146,16 +146,3 @@ int cantidadPalabras (string str) {
 
     return cantPalabras;
 }
-
-void getComando(string s,string &g,int i){
-    while(s[i] == ' ' && s[i]!='\0')
-         i++;
-    int j = 0;
-    g = new char[MAX];
-    while (s[i] != ' ' && s[i] !='\0') {
-        g[j]=s[i];
-        i++;
-        j++;
-    }
-     g[j]='\0';
-}
