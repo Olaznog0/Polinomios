@@ -5,24 +5,27 @@ int main() {
     string comando;
     string input;
 
+    Arbol a;
+    CrearArbol(a);
+
     IniciarPantalla();
     do {
-        printf("\nIngrese comando: ");
+        printf("\nIngrese un nuevo comando para continuar: ");
         int i=0;
-        InicioPrograma(input);
-        getSiguiente(input,comando,i);
+        SolicitarInput(input);
+        getSiguiente(input, comando, i);
         if(seleccionComando(comando)== 1)
-            comandoCrearOperacion(input, comando);
+            comandoCrearPolinomio(input, a, i);
         else if(seleccionComando(comando)== 2)
-            printf("Entro a sumar");
+            sumarComando(input, a, i);
         else if(seleccionComando(comando)== 3)
-            printf("Entro a multiplicar");
+            multiplicarComando(input, a, i);
         else if(seleccionComando(comando)== 4)
-            printf("Entro a evaluar");
+            evaluarComando(input, a);
         else if(seleccionComando(comando)== 5)
-            printf("Entro a es raiz");
+            esraizComando(input, a);
         else if(seleccionComando(comando)== 6)
-            printf("Entro a mostrar");
+            comandoMostrar(a);
         else if(seleccionComando(comando)== 7)
             printf("Entro a guardar");
         else if(seleccionComando(comando)== 8)
