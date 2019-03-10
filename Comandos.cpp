@@ -1,7 +1,7 @@
 /* Comandos.cpp */
 #include "Comandos.h"
 
-void SolicitarInput(string &s) {
+void InicioPrograma(string &s) {
     leerComandoUsuario(s);
 }
 
@@ -74,28 +74,32 @@ int seleccionComando(string s){
     return b;
 }
 
-void comandoCrearPolinomio(string in, Arbol &a, int i) {
+void comandoCrearOperacion(string in,string &c) {
     if(cantidadPalabras(in) > 2){
-        validarParametro(in, a, i);
+        validarParametro(in, c);
     }
     else
         printf("Cantidad de palabras ingresadas no es valida");
 }
 
-void validarParametro(string in, Arbol &a, int i) {
+void validarParametro(string in, string c) {
+    int i = 0;
     string parametro;
-    strcrear(parametro);
-    crearNombre(in, parametro, i, a);
+    crearNombre(in, parametro, i);
 }
 
-void crearNombre(string in, string &parametro, int i, Arbol &a) {
+void crearNombre(string in, string &parametro, int &i) {
+    int largoCrear = 5; // asigno el largo del comando 'crear' a sumar al indice posterior
+    while(in[i] == ' ' && in[i] != '\0')
+        i++;
+    i = i + largoCrear;
     getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
     printf("\nEl nombre del polinomio ingresado es:");
     print(parametro);
-    crearTermino(in,parametro, i, a);
+    crearTermino(in,parametro, i);
 }
 
-void crearTermino(string in, string parametro, int i, Arbol &a) {
+void crearTermino(string in, string parametro, int &i) {
     string termino;
     ListaCoeficientes listaTerminos;
     crearLista(listaTerminos);
@@ -112,7 +116,7 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
     while(listaTerminos != NULL){
         Termino t;
         CargarTermino(t, listaTerminos->info, contGrado);
-        insTerminoPrincipio(form, t);
+        insTermino(form, t);
         listaTerminos = listaTerminos -> sig;
     }
     printf("\nLa Formula ingresada es: \n");
@@ -121,126 +125,4 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
     printf("\nEl Polinomio ingresado es: \n");
     mostrarPolinomio(poli);
     printf("\n\nEscriba un comando para continuar: ");
-    InsertarPolinomio(a, poli);
-}
-
-void comandoMostrar(Arbol a) {
-    printf("\n Los polinomios son: \n");
-    mostrarArbol(a);
-}
-
-void sumarComando(string in, Arbol &a, int i) {
-     if(cantidadPalabras(in) != 4)
-        printf("\nLa suma precisa 3 parametros\n");
-     else {
-        string resultado, sumando1, sumando2;
-        strcrear(resultado);
-        strcrear(sumando1);
-        strcrear(sumando2);
-
-        getSiguiente(in, resultado, i);
-        getSiguiente(in, sumando1, i);
-        getSiguiente(in, sumando2, i);
-
-        Polinomio resultadoPol;
-        Polinomio sumandoPol1;
-        Polinomio sumandoPol2;
-
-        if(!ExistePolinomio(a, sumando1)) {
-            printf("\nEl nombre del polinomio %s no se encuentra", sumando1);
-            return;
-        }
-
-        if(!ExistePolinomio(a, sumando2)) {
-            printf("\nEl nombre del polinomio %s no se encuentra", sumando2);
-            return;
-        }
-
-        sumandoPol1 = busquedaPolinomio(a, sumando1);
-        sumandoPol2 = busquedaPolinomio(a, sumando2);
-        Formula f;
-        f = SumarPolinomios(GetFormula(sumandoPol1), GetFormula(sumandoPol2));
-        printf("\nEl resultado es:");
-        MostrarFormula(f);
-        resultadoPol = crearPolinomio(f, resultado);
-        InsertarPolinomio(a, resultadoPol);
-     }
-}
-
-void multiplicarComando(string in, Arbol &a, int i) {
-     if(cantidadPalabras(in) != 4)
-        printf("\nLa multiplicacion precisa 3 parametros\n");
-     else {
-        string resultado, mult1, mult2;
-        strcrear(resultado);
-        strcrear(mult1);
-        strcrear(mult2);
-
-        getSiguiente(in, resultado, i);
-        getSiguiente(in, mult1, i);
-        getSiguiente(in, mult2, i);
-
-        Polinomio resultadoPol;
-        Polinomio PolMult1;
-        Polinomio PolMult2;
-
-        if(!ExistePolinomio(a, mult1)) {
-            printf("El nombre del polinomio %s no se encuentra", mult1);
-            return;
-        }
-
-        if(!ExistePolinomio(a, mult2)) {
-            printf("El nombre del polinomio %s no se encuentra", mult2);
-            return;
-        }
-
-        PolMult1 = busquedaPolinomio(a, mult1);
-        PolMult2 = busquedaPolinomio(a, mult2);
-        Formula f;
-        f = multiplicarPolinomio(GetFormula(PolMult1), GetFormula(PolMult2));
-        printf("\nEl resultado es:");
-        MostrarFormula(f);
-        resultadoPol = crearPolinomio(f, resultado);
-        InsertarPolinomio(a, resultadoPol);
-     }
-}
-void evaluarComando (string input, Arbol a){
-    int i=0;
-    string comando, name, control;
-    strcrear(comando);
-    getSiguiente(input, comando, i);
-    strcrear(name);
-
-    getSiguiente(input, name, i);
-    strcrear(control);
-    getSiguiente(input, control, i);
-    int numero = atoi(control);
-
-
-    Polinomio poli = busquedaPolinomio(a, name);
-    int resultado =evaluarPolinomio(poli, numero);
-    printf("El reslultado de evaluar el polinomio con %d es:\t%d",numero ,resultado);
-
-}
-
-void esraizComando (string input, Arbol a){
-    int i=0;
-    string comando, name, control;
-    strcrear(comando);
-    getSiguiente(input, comando, i);
-    strcrear(name);
-
-    getSiguiente(input, name, i);
-    strcrear(control);
-    getSiguiente(input, control, i);
-    int numero = atoi(control);
-
-
-    Polinomio poli = busquedaPolinomio(a, name);
-    int resultado =evaluarPolinomio(poli, numero);
-    if(resultado == 0)
-        printf("El numero es raiz");
-    else
-        printf("El numero no es raiz");
-
 }

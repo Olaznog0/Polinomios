@@ -8,8 +8,6 @@
 #include "string.h"
 
 
-
-
 typedef struct {
     long int coeficiente;
     int grado;
@@ -19,10 +17,8 @@ void CargarTermino (Termino &t, string a, int &i); /* Carga un termino desde str
 void MostrarTermino (Termino t); /* Muestra un termino por pantalla */
 Termino SumarTerminos (Termino a, Termino b); /* Dados dos terminos devuelve la suma de los mismos */
 Termino MultiplicarTerminos (Termino a, Termino b); /* Dados dos terminos devuelve el producto de los mismos */
-int GetCoeficiente (Termino t);
+long int GetCoeficiente (Termino t);
 int GetGrado (Termino t);
-int evaluarTermino (Termino t, int eval);
-
 
 
 #endif // TERMINO_H_INCLUDED

@@ -42,7 +42,7 @@ void InsertarPolinomio (Arbol &a, Polinomio e) {
 		a -> HDer = NULL;
 	}
 	else
-        if (strmen(e.nombre, a->info.nombre))
+        if (e.nombre < a->info.nombre)
             InsertarPolinomio(a->HIzq,e);
         else
             InsertarPolinomio(a->HDer,e);
@@ -61,30 +61,11 @@ boolean PerteneceABB (Arbol a, Polinomio e) {
 			return PerteneceABB(a->HDer,e);
 }
 
-Polinomio busquedaPolinomio (Arbol a, string n) {
-    Polinomio p = a->info;
-    if(streq(p.nombre, n))
-        return a->info;
+Polinomio Minimo (Arbol a) {
+    if (a->HIzq == NULL)
+        return (a->info);
     else
-        if(strmen(n, p.nombre))
-            return busquedaPolinomio(a->HIzq, n);
-        else
-            return busquedaPolinomio(a->HDer, n);
-}
-
-boolean ExistePolinomio (Arbol a, string n) {
-    if(a == NULL)
-        return FALSE;
-    else {
-        Polinomio p = a->info;
-        if(streq(p.nombre, n))
-            return TRUE;
-        else
-            if(strmen(n, p.nombre))
-                return ExistePolinomio(a->HIzq, n);
-            else
-                return ExistePolinomio(a->HDer, n);
-    }
+        return Minimo(a->HIzq);
 }
 
 /* Precondición : el árbol a  NO está vacío */
@@ -97,14 +78,4 @@ void Borrar_Minimo (Arbol &a) {
     }
     else
         Borrar_Minimo (a->HIzq);
-}
-
-void mostrarArbol(Arbol a) {
-    if(a == NULL)
-        return;
-    else {
-        mostrarArbol(a -> HIzq);
-        mostrarPolinomio(a->info);
-        mostrarArbol(a -> HDer);
-    }
 }
