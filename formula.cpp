@@ -55,3 +55,5 @@ Termino getTermino(Formula f){
     return t;
 
 }
+
+

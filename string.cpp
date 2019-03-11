@@ -146,3 +146,60 @@ int cantidadPalabras (string str) {
 
     return cantPalabras;
 }
+
+int stgVacio (string str) {
+    int i = 0;
+    int cantPalabras = 0;
+
+    while (str[i] != '\0') {
+        while(str[i] != ' ' && str[i] != '\n') {
+                cantPalabras++;
+                i++;
+        }
+        i++;
+    }
+    return cantPalabras;
+}
+
+void bajarString(string s, FILE * f ) {
+    int i = 0;
+     while(s[i] != '\0') {
+        fwrite (&s[i], sizeof(char), 1, f);
+        i++;
+    }
+
+    fwrite (&s[i], sizeof(char), 1, f);
+    fclose (f);
+}
+
+void levantarString(FILE * f , string &res){
+    int i=0;
+    string aux;
+    aux = new char[MAX];
+    fread (&aux[i], sizeof(char), 1, f);
+    while(!(feof(f)) && (aux[i]!= '\0')){
+        i++;
+        fread (&aux[i], sizeof(char), 1, f);
+    }
+    strcop(res, aux);
+    delete [] aux;
+    fclose(f);
+    printf("\nAcaba de recuperar el archivo!\n");
+}
+
+void scanAuto (string input,string &s) {
+	int i=0;
+	int j=0;
+	string aux1,aux2;
+	strcrear(aux1);
+	strcrear(aux2);
+	getSiguiente(input,aux1,i);
+	getSiguiente(input, aux2,i);
+	while(input[i]!='\0') {
+        s[j]=input[i];
+        i++;
+        j++;
+	}
+	s[j]='\0';
+}
+
