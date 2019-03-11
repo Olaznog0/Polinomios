@@ -10,6 +10,5 @@ int main() {
 
     IniciarSeleccion(a, input, comando);
 
-
     return 0;
 }

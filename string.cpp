@@ -165,14 +165,12 @@ int stgVacio (string str) {
             EstoyEnPalabra = TRUE;
         i++;
     }
-
-
     return cantPalabras;
 }
 
-void bajarString(string s, FILE * f ){
-    int i =0;
-     while(s[i] != '\0'){
+void bajarString(string s, FILE * f ) {
+    int i = 0;
+     while(s[i] != '\0') {
         fwrite (&s[i], sizeof(char), 1, f);
         i++;
     }
@@ -185,14 +183,15 @@ void levantarString(FILE * f , string &res){
     int i=0;
     string aux;
     aux = new char[MAX];
+    //al leer falla
     fread (&aux[i], sizeof(char), 1, f);
-    while(!(feof(f)) && (aux[i]!='\0')){
-        printf("inwhile");
+    while(!(feof(f)) && (aux[i]!= '\0')){
+        printf("ADENTRO DEL WHILE NUNCA LLEGA FALLA EN LA FREAD");
         i++;
         fread (&aux[i], sizeof(char), 1, f);
     }
     strcop(res, aux);
-    delete[] aux;
+    delete [] aux;
     fclose(f);
 }
 
@@ -204,12 +203,11 @@ void scanAuto (string input,string &s) {
 	strcrear(aux2);
 	getSiguiente(input,aux1,i);
 	getSiguiente(input, aux2,i);
-	while(input[i]!='\0'){
+	while(input[i]!='\0') {
         s[j]=input[i];
         i++;
         j++;
 	}
 	s[j]='\0';
-
-
 }
+

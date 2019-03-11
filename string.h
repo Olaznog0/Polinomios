@@ -24,4 +24,6 @@ int stgVacio (string str);
 void bajarString(string s, FILE * f );
 void levantarString(FILE * f, string &res);
 void scanAuto (string input,string &s);
+
+
 #endif

@@ -47,8 +47,6 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
         printf("\nEl termino ingresado es: \n");
         print(termino);
         InsFront(listaTerminos, termino);
-
-
     }
     Formula form;
     crearFormula(form);
@@ -64,16 +62,13 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
     Polinomio poli = crearPolinomio(form,parametro);
     printf("\nEl Polinomio ingresado es: \n");
     mostrarPolinomio(poli);
+
     string strArch;
     strcrear(strArch);
-    scanAuto(in,strArch);
+    scanAuto(in, strArch);
     poli.formulaArchivo = strArch;
+
     InsertarPolinomio(a, poli);
-    printf("hoal.\n");
-    print(poli.formulaArchivo);
-
-
-
 }
 
 void comandoMostrar(Arbol a) {
@@ -197,63 +192,62 @@ void esraizComando (string input, Arbol a){
         printf("\nEl numero %d es raiz\n", numero);
     else
         printf("\nEl numero %d no es raiz\n", numero);
-
 }
 
-void guardarComando(string input, Arbol a, int i){
+void guardarComando(string input, Arbol a, int i) {
     i=0;
-    printf("entra");
     string comando;
     string nombreArchivo, nombrePoli;
     strcrear(comando);
     strcrear(nombrePoli);
     strcrear(nombreArchivo);
+    
     getSiguiente(input, comando, i);
-
     getSiguiente(input, nombrePoli, i);
-
     getSiguiente(input, nombreArchivo, i);
 
     FILE*f;
-    f=fopen(nombreArchivo,"wb");
-    Polinomio p =busquedaPolinomio(a, nombrePoli);
+    f=fopen(nombreArchivo, "wb");
+    Polinomio p = busquedaPolinomio(a, nombrePoli);
+    
     string aux;
     strcrear(aux);
-    strcop(aux,busquedaPolinomio(a, nombrePoli).formulaArchivo);
+    strcop(aux, busquedaPolinomio(a, nombrePoli).formulaArchivo);
+    printf("\nAcaba de grabar el archivo: ");
     print(aux);
     bajarString(aux , f );
 
 }
 
-void recuperarComando(string input, Arbol a){
+void recuperarComando(string input, Arbol a) {
     FILE * f;
-    int i=0;
-    printf("entra");
+    int i = 0;
     string comando;
     string nombreNuevo, nombreArch;
+  
     strcrear(comando);
     strcrear(nombreNuevo);
     strcrear(nombreArch);
+  
     getSiguiente(input, comando, i);
     getSiguiente(input, nombreNuevo, i);
     getSiguiente(input, nombreArch, i);
-    fopen(nombreArch,"rb");
+    
+    fopen(nombreArch, "rb");
     Polinomio resu;
     string res;
     i=0;
     strcrear(res);
+    // Falla al ejecutar levantar string fread
     levantarString(f, res);
     /*resu.nombre = nombreNuevo;
     resu.formulaArchivo=res;*/
     string aux;
     strcrear(aux);
     while(res[i]!= '\0'){
-            printf("sdsdsd");
+            printf("no entra falla antes");
         getSiguiente(res, aux, i);
         crearTermino(aux, nombreNuevo, i, a);
         i++;
     }
-
-
-
 }
