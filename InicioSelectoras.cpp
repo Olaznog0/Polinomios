@@ -22,22 +22,18 @@ void IniciarSeleccion(Arbol a, string input, string comando) {
         else if(seleccionComando(comando)== 6)
             comandoMostrar(a);
         else if(seleccionComando(comando)== 7)
-            guardarComando(input, a, i);
+            printf("Entro a guardar");
         else if(seleccionComando(comando)== 8)
-            recuperarComando(input, a);
+            printf("Entro a recuperar");
         else if(seleccionComando(comando)== 9)
             printf("\n*****\tHasta Luego!\t*****\n");
         else if(seleccionComando(comando)== 10)
             IniciarPantalla();
         else if(seleccionComando(comando)== 11)
             SintaxisComando();
-        else if(seleccionComando(comando)== 12) {
-            if(stgVacio(comando) < 1 )
-                printf("\nUsted no ha escrito nada, intente nuevamente.\n");
-            else {
-                printf("\nTiene un error en el nombre del comando, usted escribio: ");
-                print(comando);
-            }
+        else if(seleccionComando(comando)== 12){
+            printf("\nTiene un error en el nombre del comando, usted escribio: ");
+            print(comando);
         }
     } while (seleccionComando(comando)!= 9);
 }

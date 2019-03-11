@@ -41,5 +41,3 @@ void InsFront (ListaCoeficientes & lis, string e) {
     aux -> sig = lis;
     lis = aux;
 }
-
-

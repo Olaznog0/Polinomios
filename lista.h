@@ -20,5 +20,4 @@ void MostrarLista(ListaCoeficientes l); /* Muestra por pantalla la lista de term
 string Primero (ListaCoeficientes lis);
 void InsFront (ListaCoeficientes & lis, string e);
 
-
 #endif // LISTA_H_INCLUDED

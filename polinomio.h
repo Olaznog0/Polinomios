@@ -8,7 +8,6 @@
 typedef struct {
             string nombre;
             Formula formu;
-            string formulaArchivo;
         }Polinomio;
 
 Polinomio crearPolinomio(Formula f,string s); /* Crear un polinomio desde un string */

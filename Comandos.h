@@ -26,8 +26,4 @@ void multiplicarComando(string in, Arbol &a, int i);
 void evaluarComando (string input, Arbol a);
 void esraizComando (string input, Arbol a);
 
-void guardarComando(string nombrePoli,  Arbol a, int i);
-void recuperarComando(string input, Arbol a);
-
-
 #endif // COMANDOS_H_INCLUDED
