@@ -98,25 +98,4 @@ int evaluarPolinomio(Polinomio p,int eval){
         f = f -> sig;
     }
     return resu;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

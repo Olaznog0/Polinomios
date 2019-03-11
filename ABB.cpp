@@ -11,14 +11,6 @@ boolean EsVacio(Arbol a) {
     return (boolean) (a == NULL);
 }
 
-Arbol Constructor (Polinomio r,Arbol i,Arbol d) {
-    Arbol a = new nodo;
-    a->info = r;
-    a->HIzq = i;
-    a->HDer = d;
-    return a;
-}
-
 void ListarOrdenado (Arbol a) {
     if (a != NULL) {
         ListarOrdenado (a -> HIzq);
@@ -34,6 +26,7 @@ Polinomio DarRaiz (Arbol a) {
 
 }
 
+/* precondición: el valor no exista previamente en el ABB */
 void InsertarPolinomio (Arbol &a, Polinomio e) {
 	if (a == NULL) {
 		a = new nodo;
@@ -46,19 +39,6 @@ void InsertarPolinomio (Arbol &a, Polinomio e) {
             InsertarPolinomio(a->HIzq,e);
         else
             InsertarPolinomio(a->HDer,e);
-}
-
-boolean PerteneceABB (Arbol a, Polinomio e) {
-	if (a == NULL)
-		return FALSE;
-	else
-        if (e.nombre == a->info.nombre)
-            return TRUE;
-	else
-		if (e.nombre < a->info.nombre)
-			return PerteneceABB(a->HIzq,e);
-		else
-			return PerteneceABB(a->HDer,e);
 }
 
 Polinomio busquedaPolinomio (Arbol a, string n) {

@@ -967,3 +967,237 @@
 1552166235 source:c:\users\i3 x540 1\desktop\p\facultad\taller 2019\polinomios-staging\termino.cpp
 	"termino.h"
 
+1552177003 source:c:\users\g_amo\desktop\polinomios-staging\abb.cpp
+	"ABB.h"
+	"polinomio.h"
+
+1552177015 c:\users\g_amo\desktop\polinomios-staging\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1552173644 c:\users\g_amo\desktop\polinomios-staging\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1552173644 c:\users\g_amo\desktop\polinomios-staging\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+	"lista.h"
+
+1552173644 c:\users\g_amo\desktop\polinomios-staging\boolean.h
+	<stdio.h>
+
+1552228856 c:\users\g_amo\desktop\polinomios-staging\string.h
+	<stdio.h>
+	"boolean.h"
+
+1552173644 c:\users\g_amo\desktop\polinomios-staging\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1552173644 c:\users\g_amo\desktop\polinomios-staging\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1552173644 source:c:\users\g_amo\desktop\polinomios-staging\boolean.cpp
+	"boolean.h"
+
+1552230540 source:c:\users\g_amo\desktop\polinomios-staging\comandos.cpp
+	"Comandos.h"
+
+1552230647 c:\users\g_amo\desktop\polinomios-staging\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"ABB.h"
+
+1552173644 source:c:\users\g_amo\desktop\polinomios-staging\formula.cpp
+	"formula.h"
+
+1552173644 source:c:\users\g_amo\desktop\polinomios-staging\lista.cpp
+	"lista.h"
+
+1552228702 source:c:\users\g_amo\desktop\polinomios-staging\main.cpp
+	<stdio.h>
+	"InicioSelectoras.h"
+
+1552178754 source:c:\users\g_amo\desktop\polinomios-staging\polinomio.cpp
+	"polinomio.h"
+
+1552178960 source:c:\users\g_amo\desktop\polinomios-staging\string.cpp
+	"string.h"
+
+1552173644 source:c:\users\g_amo\desktop\polinomios-staging\termino.cpp
+	"termino.h"
+
+1552231407 source:c:\users\g_amo\desktop\polinomios-staging\inicioselectoras.cpp
+	"InicioSelectoras.h"
+
+1552230536 c:\users\g_amo\desktop\polinomios-staging\inicioselectoras.h
+	<stdio.h>
+	"Comandos.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\abb.cpp
+	"ABB.h"
+	"polinomio.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+	"lista.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\boolean.h
+	<stdio.h>
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\string.h
+	<stdio.h>
+	"boolean.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\boolean.cpp
+	"boolean.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\formula.cpp
+	"formula.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\inicioselectoras.cpp
+	"InicioSelectoras.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\inicioselectoras.h
+	<stdio.h>
+	"Comandos.h"
+
+1552248699 c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"ABB.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\lista.cpp
+	"lista.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\main.cpp
+	<stdio.h>
+	"InicioSelectoras.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\polinomio.cpp
+	"polinomio.h"
+
+1552248699 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\string.cpp
+	"string.h"
+
+1552249664 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\termino.cpp
+	"termino.h"
+
+1552248855 source:c:\users\gamorim\desktop\polinomios-staging\polinomios-staging\comandos.cpp
+	"Comandos.h"
+
+1552250155 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\abb.cpp
+	"ABB.h"
+	"polinomio.h"
+
+1552250155 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\abb.h
+	<stdio.h>
+	"polinomio.h"
+
+1552255348 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\polinomio.h
+	<stdio.h>
+	"formula.h"
+
+1552259888 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\formula.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+	"lista.h"
+
+1552250155 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\boolean.h
+	<stdio.h>
+
+1552263619 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\string.h
+	<stdio.h>
+	"boolean.h"
+
+1552250155 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\termino.h
+	<stdio.h>
+	<stdlib.h>
+	"boolean.h"
+	"string.h"
+
+1552257024 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\lista.h
+	<stdio.h>
+	"boolean.h"
+	"string.h"
+	"termino.h"
+
+1552250155 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\boolean.cpp
+	"boolean.h"
+
+1552256932 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\formula.cpp
+	"formula.h"
+
+1552260754 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\inicioselectoras.cpp
+	"InicioSelectoras.h"
+
+1552250155 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\inicioselectoras.h
+	<stdio.h>
+	"Comandos.h"
+
+1552260815 c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\comandos.h
+	<stdio.h>
+	"string.h"
+	<ctype.h>
+	"lista.h"
+	"formula.h"
+	"ABB.h"
+
+1552257024 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\lista.cpp
+	"lista.h"
+
+1552253402 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\main.cpp
+	<stdio.h>
+	"InicioSelectoras.h"
+
+1552250155 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\polinomio.cpp
+	"polinomio.h"
+
+1552262906 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\string.cpp
+	"string.h"
+
+1552250155 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\termino.cpp
+	"termino.h"
+
+1552263912 source:c:\users\i3 x540 1\desktop\p\facultad\polinomios-staging\comandos.cpp
+	"Comandos.h"
+
