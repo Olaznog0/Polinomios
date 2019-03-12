@@ -108,9 +108,11 @@ void strcon (string &s1,string s2) {
 
 void strswp (string &s1, string &s2) {
 	string aux;
+	strcrear(aux);
 	aux = s1;
 	s1 = s2;
 	s2 = aux;
+	strdestruir(aux);
 }
 
 void getSiguiente(string s, string &g, int &i) {
@@ -146,19 +148,18 @@ int cantidadPalabras (string str) {
 
     return cantPalabras;
 }
-
-int stgVacio (string str) {
+//falta revisar y corregir
+boolean stgVacio (string str) {
     int i = 0;
-    int cantPalabras = 0;
-
+    boolean soloEspacios = FALSE;
     while (str[i] != '\0') {
-        while(str[i] != ' ' && str[i] != '\n') {
-                cantPalabras++;
-                i++;
+        while(str[i] == ' ' || str[i] == '\n') {
+            i++;
+            soloEspacios = TRUE;
         }
         i++;
     }
-    return cantPalabras;
+    return soloEspacios;
 }
 
 void bajarString(string s, FILE * f ) {
@@ -167,7 +168,7 @@ void bajarString(string s, FILE * f ) {
         fwrite (&s[i], sizeof(char), 1, f);
         i++;
     }
-
+    s[i] = '\0';
     fwrite (&s[i], sizeof(char), 1, f);
     fclose (f);
 }
@@ -177,14 +178,14 @@ void levantarString(FILE * f , string &res){
     string aux;
     aux = new char[MAX];
     fread (&aux[i], sizeof(char), 1, f);
-    while(!(feof(f)) && (aux[i]!= '\0')){
+    while(!feof(f) && (aux[i]!= '\0')){
         i++;
         fread (&aux[i], sizeof(char), 1, f);
     }
     strcop(res, aux);
     delete [] aux;
     fclose(f);
-    printf("\nAcaba de recuperar el archivo!\n");
+
 }
 
 void scanAuto (string input,string &s) {
@@ -201,5 +202,8 @@ void scanAuto (string input,string &s) {
         j++;
 	}
 	s[j]='\0';
+
+	strdestruir(aux1);
+	strdestruir(aux2);
 }
 

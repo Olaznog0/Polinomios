@@ -22,7 +22,7 @@ void IniciarSeleccion(Arbol a, string input, string comando) {
         else if(seleccionComando(comando)== 6)
             comandoMostrar(a);
         else if(seleccionComando(comando)== 7)
-            guardarComando(input, a, i);
+            guardarComando(input, a);
         else if(seleccionComando(comando)== 8)
             recuperarComando(input, a);
         else if(seleccionComando(comando)== 9)
@@ -30,14 +30,17 @@ void IniciarSeleccion(Arbol a, string input, string comando) {
         else if(seleccionComando(comando)== 10)
             IniciarPantalla();
         else if(seleccionComando(comando)== 11)
-            SintaxisComando();
+            SintaxisComandoAyuda();
         else if(seleccionComando(comando)== 12) {
-            int aux = stgVacio(comando);
-            if(aux == 0)
+            // falla operacion revisar!
+            boolean aux;
+            aux = stgVacio(input);
+            if(aux)
                 printf("\nUsted no ha escrito nada, intente nuevamente.\n");
             else {
                 printf("\nTiene un error en el nombre del comando, usted escribio: ");
                 print(input);
+
             }
         }
     } while (seleccionComando(comando)!= 9);
@@ -58,7 +61,7 @@ void IniciarPantalla() {
     printf("\n9- Salir: abandona la aplicacion\n\n");
 }
 
-void SintaxisComando() {
+void SintaxisComandoAyuda() {
     printf("\nSintaxis de los Comandos, panel de ayuda:\n");
     printf("\n\tCrear -> crear nombre termino1 termino2 terminoN");
     printf("\n\tSumar -> sumar nombreNuevo nombre1 nombre2");

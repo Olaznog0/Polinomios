@@ -10,5 +10,8 @@ int main() {
 
     IniciarSeleccion(a, input, comando);
 
+    strdestruir(comando);
+    strdestruir(input);
+
     return 0;
 }

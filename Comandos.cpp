@@ -25,8 +25,8 @@ void validarParametro(string in, Arbol &a, int i) {
 }
 
 void crearNombre(string in, string &parametro, int i, Arbol &a) {
-    getSiguiente(in, parametro, i); // busco parametro nombre de archivo y posterior verificacion a implementar
-    if(ExistePolinomio(a, parametro)){
+    getSiguiente(in, parametro, i);
+    if(ExistePolinomio(a, parametro)) {
         printf("\nEse nombre ya existe, intentelo nuevamente.\n");
     }
     else{
@@ -48,6 +48,7 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
         print(termino);
         InsFront(listaTerminos, termino);
     }
+
     Formula form;
     crearFormula(form);
     int contGrado = 0;
@@ -63,9 +64,11 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
     printf("\nEl Polinomio ingresado es: \n");
     mostrarPolinomio(poli);
 
+    // revisar el strArch
     string strArch;
     strcrear(strArch);
     scanAuto(in, strArch);
+
     poli.formulaArchivo = strArch;
 
     InsertarPolinomio(a, poli);
@@ -153,6 +156,10 @@ void multiplicarComando(string in, Arbol &a, int i) {
         MostrarFormula(f);
         resultadoPol = crearPolinomio(f, resultado);
         InsertarPolinomio(a, resultadoPol);
+
+        strdestruir(resultado);
+        strdestruir(mult1);
+        strdestruir(mult2);
      }
 }
 void evaluarComando (string input, Arbol a){
@@ -171,6 +178,10 @@ void evaluarComando (string input, Arbol a){
     Polinomio poli = busquedaPolinomio(a, name);
     int resultado =evaluarPolinomio(poli, numero);
     printf("\nEl resultado de evaluar el polinomio con %d es:\t%d\n", numero ,resultado);
+
+    strdestruir(comando);
+    strdestruir(name);
+    strdestruir(control);
 
 }
 
@@ -192,10 +203,14 @@ void esraizComando (string input, Arbol a){
         printf("\nEl numero %d es raiz\n", numero);
     else
         printf("\nEl numero %d no es raiz\n", numero);
+
+    strdestruir(comando);
+    strdestruir(name);
+    strdestruir(control);
 }
 
-void guardarComando(string input, Arbol a, int i) {
-    i=0;
+void guardarComando(string input, Arbol a) {
+    int i = 0;
     string comando;
     string nombreArchivo, nombrePoli;
     strcrear(comando);
@@ -213,13 +228,20 @@ void guardarComando(string input, Arbol a, int i) {
     string aux;
     strcrear(aux);
     strcop(aux, busquedaPolinomio(a, nombrePoli).formulaArchivo);
-    printf("\nAcaba de grabar el archivo: ");
+    // VALIDAR
+    printf("\nAcaba de grabar el polinomio en memoria con la siguiente formula: ");
     print(aux);
     bajarString(aux , f );
 
+    strdestruir(aux);
+    strdestruir(comando);
+    strdestruir(nombreArchivo);
+    strdestruir(nombrePoli);
+
+
 }
 
-void recuperarComando(string input, Arbol a) {
+void recuperarComando(string input, Arbol &a) {
     FILE * f;
     int i = 0;
     string comando;
@@ -233,21 +255,20 @@ void recuperarComando(string input, Arbol a) {
     getSiguiente(input, nombreNuevo, i);
     getSiguiente(input, nombreArch, i);
 
-    // FALTABA ASIGNAR F AL FOPEN!!!
     f = fopen(nombreArch, "rb");
-    Polinomio resu;
+
     string res;
-    i=0;
     strcrear(res);
-    // YA NO FALLA al levantar fread, no carga valores correctamente
+
     levantarString(f, res);
 
-    string aux;
-    strcrear(aux);
-    while(res[i]!= '\0'){
-        printf("Ahora entra aca, no graba terminos correctamente");
-        getSiguiente(res, aux, i);
-        crearTermino(aux, nombreNuevo, i, a);
-        i++;
-    }
+    i=0;
+    crearTermino(res, nombreNuevo, i, a);// VALIDAR OPERACION
+    printf("\nAcaba de recuperar su archivo exitosamente.\n");
+
+    strdestruir(comando);
+    //strdestruir(nombreNuevo);
+    strdestruir(nombreArch);
+    strdestruir(res);
+
 }

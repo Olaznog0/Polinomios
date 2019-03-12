@@ -12,22 +12,6 @@ void MostrarFormula(Formula a) {
     }
 }
 
-int GradoFormula(Formula a) {
-
-}
-
-int EvaluarFormula(int &a) {
-
-}
-
-Formula SumarFormulas(Formula a, Formula b) {
-
-}
-
-Formula MultiplicarFormulas(Formula a, Formula b) {
-
-}
-
 void insTerminoPrincipio(Formula &f, Termino t) {
     Formula aux = new Nodo;
     aux -> info = t;
@@ -55,5 +39,3 @@ Termino getTermino(Formula f){
     return t;
 
 }
-
-

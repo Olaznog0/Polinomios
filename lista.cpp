@@ -12,13 +12,6 @@ boolean Vacia (ListaCoeficientes lis) {
     return es;
 }
 
-void CargarLista(string g) {
-
-
-
-}
-
-
 void MostrarLista(ListaCoeficientes l) {
     string str;
     strcrear(str);
