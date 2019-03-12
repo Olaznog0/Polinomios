@@ -174,10 +174,13 @@ void evaluarComando (string input, Arbol a){
     getSiguiente(input, control, i);
     int numero = atoi(control);
 
-
-    Polinomio poli = busquedaPolinomio(a, name);
-    int resultado =evaluarPolinomio(poli, numero);
-    printf("\nEl resultado de evaluar el polinomio con %d es:\t%d\n", numero ,resultado);
+    if(ExistePolinomio(a, name)) {
+        Polinomio poli = busquedaPolinomio(a, name);
+        int resultado = evaluarPolinomio(poli, numero);
+        printf("\nEl resultado de evaluar el polinomio con %d es:\t%d\n", numero ,resultado);
+    }
+    else
+        printf("\nEl nombre del polinomio ingresado no es correcto, intente de nuevo.\n");
 
     strdestruir(comando);
     strdestruir(name);
@@ -197,12 +200,16 @@ void esraizComando (string input, Arbol a){
     getSiguiente(input, control, i);
     int numero = atoi(control);
 
-    Polinomio poli = busquedaPolinomio(a, name);
-    int resultado = evaluarPolinomio(poli, numero);
-    if(resultado == 0)
-        printf("\nEl numero %d es raiz\n", numero);
+    if(ExistePolinomio(a, name)) {
+        Polinomio poli = busquedaPolinomio(a, name);
+        int resultado = evaluarPolinomio(poli, numero);
+        if(resultado == 0)
+            printf("\nEl numero %d es raiz\n", numero);
+        else
+            printf("\nEl numero %d no es raiz\n", numero);
+    }
     else
-        printf("\nEl numero %d no es raiz\n", numero);
+        printf("\nEl nombre del polinomio ingresado no es correcto, intente de nuevo.\n");
 
     strdestruir(comando);
     strdestruir(name);
@@ -221,24 +228,25 @@ void guardarComando(string input, Arbol a) {
     getSiguiente(input, nombrePoli, i);
     getSiguiente(input, nombreArchivo, i);
 
+
     FILE*f;
     f=fopen(nombreArchivo, "wb");
-    Polinomio p = busquedaPolinomio(a, nombrePoli);
 
-    string aux;
-    strcrear(aux);
-    strcop(aux, busquedaPolinomio(a, nombrePoli).formulaArchivo);
-    // VALIDAR
-    printf("\nAcaba de grabar el polinomio en memoria con la siguiente formula: ");
-    print(aux);
-    bajarString(aux , f );
+    if(ExistePolinomio(a, nombrePoli)) {
+        Polinomio p = busquedaPolinomio(a, nombrePoli);
+        string aux;
+        strcrear(aux);
+        strcop(aux, busquedaPolinomio(a, nombrePoli).formulaArchivo);
+        printf("\nAcaba de grabar el polinomio en memoria con la siguiente formula: ");
+        print(aux);
+        bajarString(aux , f );
+        strdestruir(aux);
+    } else
+        printf("\nEl nombre del archivo seleccionado no es correcto, su operacion no se ha realizado correctamente. Intente de nuevo.\n");
 
-    strdestruir(aux);
     strdestruir(comando);
     strdestruir(nombreArchivo);
     strdestruir(nombrePoli);
-
-
 }
 
 void recuperarComando(string input, Arbol &a) {

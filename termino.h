@@ -7,9 +7,6 @@
 #include "boolean.h"
 #include "string.h"
 
-
-
-
 typedef struct {
     long int coeficiente;
     int grado;
@@ -17,8 +14,8 @@ typedef struct {
 
 void CargarTermino (Termino &t, string a, int &i); /* Carga un termino desde string */
 void MostrarTermino (Termino t); /* Muestra un termino por pantalla */
-int GetCoeficiente (Termino t);
-int GetGrado (Termino t);
+int GetCoeficiente (Termino t); /* Devuelve el coeficiente de un Termino */
+int GetGrado (Termino t); /* Devuelve el grado de un Termino */
 int evaluarTermino (Termino t, int eval);
 
 

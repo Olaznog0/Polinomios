@@ -17,11 +17,6 @@ typedef Nodo *Formula;
 
 void crearFormula(Formula &f); /* Carga formula desde un string */
 void MostrarFormula(Formula a); /* Muestra por pantalla la lista de terminos que comprende la formula */
-// mover de lugar
-/* Devuelve el grado de una Formula */
-/* Devuelve el resultado de sustituir x por un numero */
-/* Devuelve una formula que es la suma de otras dos */
-/* Devuelve una formula que es el producto de otras dos */
 void insTerminoPrincipio(Formula &f, Termino t);
 void insTerminoAlFinal(Formula &f, Termino t);
 Termino getTermino(Formula f);
