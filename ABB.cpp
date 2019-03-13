@@ -1,5 +1,6 @@
 /* ABB.cpp */
 #include"ABB.h"
+#include"polinomio.h"
 
 /* precondición: el valor no exista previamente en el ABB */
 void CrearArbol (Arbol &a) {
@@ -10,12 +11,12 @@ boolean EsVacio(Arbol a) {
     return (boolean) (a == NULL);
 }
 
-Arbol Constructor (Polinomio r,Arbol i,Arbol d) {
-    Arbol a = new nodo;
-    a->info = r;
-    a->HIzq = i;
-    a->HDer = d;
-    return a;
+void ListarOrdenado (Arbol a) {
+    if (a != NULL) {
+        ListarOrdenado (a -> HIzq);
+        printf ("%c", a -> info);
+        ListarOrdenado (a -> HDer);
+    }
 }
 
 /* Precondición: Arbol NO vacío */
@@ -25,6 +26,7 @@ Polinomio DarRaiz (Arbol a) {
 
 }
 
+/* precondición: el valor no exista previamente en el ABB */
 void InsertarPolinomio (Arbol &a, Polinomio e) {
 	if (a == NULL) {
 		a = new nodo;
@@ -33,30 +35,36 @@ void InsertarPolinomio (Arbol &a, Polinomio e) {
 		a -> HDer = NULL;
 	}
 	else
-        if (e.nombre < a->info.nombre)
+        if (strmen(e.nombre, a->info.nombre))
             InsertarPolinomio(a->HIzq,e);
         else
             InsertarPolinomio(a->HDer,e);
 }
 
-boolean PerteneceABB (Arbol a, Polinomio e) {
-	if (a == NULL)
-		return FALSE;
-	else
-        if (e.nombre == a->info.nombre)
-            return TRUE;
-	else
-		if (e.nombre < a->info.nombre)
-			return PerteneceABB(a->HIzq,e);
-		else
-			return PerteneceABB(a->HDer,e);
+Polinomio busquedaPolinomio (Arbol a, string n) {
+    Polinomio p = a->info;
+    if(streq(p.nombre, n))
+        return a->info;
+    else
+        if(strmen(n, p.nombre))
+            return busquedaPolinomio(a->HIzq, n);
+        else
+            return busquedaPolinomio(a->HDer, n);
 }
 
-Polinomio Minimo (Arbol a) {
-    if (a->HIzq == NULL)
-        return (a->info);
-    else
-        return Minimo(a->HIzq);
+boolean ExistePolinomio (Arbol a, string n) {
+    if(a == NULL)
+        return FALSE;
+    else {
+        Polinomio p = a->info;
+        if(streq(p.nombre, n))
+            return TRUE;
+        else
+            if(strmen(n, p.nombre))
+                return ExistePolinomio(a->HIzq, n);
+            else
+                return ExistePolinomio(a->HDer, n);
+    }
 }
 
 /* Precondición : el árbol a  NO está vacío */
@@ -69,4 +77,14 @@ void Borrar_Minimo (Arbol &a) {
     }
     else
         Borrar_Minimo (a->HIzq);
+}
+
+void mostrarArbol(Arbol a) {
+    if(a == NULL)
+        return;
+    else {
+        mostrarArbol(a -> HIzq);
+        mostrarPolinomio(a->info);
+        mostrarArbol(a -> HDer);
+    }
 }

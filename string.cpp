@@ -108,15 +108,16 @@ void strcon (string &s1,string s2) {
 
 void strswp (string &s1, string &s2) {
 	string aux;
+	strcrear(aux);
 	aux = s1;
 	s1 = s2;
 	s2 = aux;
+	strdestruir(aux);
 }
 
-void getSiguiente(string s,string &g,int &i){
+void getSiguiente(string s, string &g, int &i) {
     while(s[i] == ' ' && s[i]!='\0')
          i++;
-
     int j = 0;
     g = new char[MAX];
     while (s[i] != ' ' && s[i] !='\0') {
@@ -125,25 +126,84 @@ void getSiguiente(string s,string &g,int &i){
         j++;
     }
      g[j]='\0';
-
-
-
-
-
 }
 
 int cantidadPalabras (string str) {
-    int cont = ocurre(str,' ');
-    return (cont+1);
-}
+    int i = 0;
+    int cantPalabras = 0;
+    boolean EstoyEnPalabra = FALSE;
 
-int ocurre (string str, char c) {
-    int i = 0,
-    cont = 0;
     while (str[i] != '\0') {
-        if (str[i] == c)
-            cont++;
+        if(str[i] == ' ') {
+            if(EstoyEnPalabra) {
+                cantPalabras++;
+                EstoyEnPalabra = FALSE;
+            }
+        }
+        else
+            EstoyEnPalabra = TRUE;
         i++;
     }
-    return cont;
+    cantPalabras++;
+
+    return cantPalabras;
 }
+//falta revisar y corregir
+boolean stgVacio (string str) {
+    int i = 0;
+    boolean soloEspacios = FALSE;
+    while (str[i] != '\0') {
+        while(str[i] == ' ' || str[i] == '\n') {
+            i++;
+            soloEspacios = TRUE;
+        }
+        i++;
+    }
+    return soloEspacios;
+}
+
+void bajarString(string s, FILE * f ) {
+    int i = 0;
+     while(s[i] != '\0') {
+        fwrite (&s[i], sizeof(char), 1, f);
+        i++;
+    }
+    s[i] = '\0';
+    fwrite (&s[i], sizeof(char), 1, f);
+    fclose (f);
+}
+
+void levantarString(FILE * f , string &res){
+    int i=0;
+    string aux;
+    aux = new char[MAX];
+    fread (&aux[i], sizeof(char), 1, f);
+    while(!feof(f) && (aux[i]!= '\0')){
+        i++;
+        fread (&aux[i], sizeof(char), 1, f);
+    }
+    strcop(res, aux);
+    delete [] aux;
+    fclose(f);
+
+}
+
+void scanAuto (string input,string &s) {
+	int i=0;
+	int j=0;
+	string aux1,aux2;
+	strcrear(aux1);
+	strcrear(aux2);
+	getSiguiente(input,aux1,i);
+	getSiguiente(input, aux2,i);
+	while(input[i]!='\0') {
+        s[j]=input[i];
+        i++;
+        j++;
+	}
+	s[j]='\0';
+
+	strdestruir(aux1);
+	strdestruir(aux2);
+}
+

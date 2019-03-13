@@ -1,46 +1,17 @@
 #include <stdio.h>
-#include "Comandos.h"
-#include "polinomio.h"
-
-// hay un conflicto
+#include "InicioSelectoras.h"
 
 int main() {
- string comando;
- string input;
- int i=0;
+    string comando;
+    string input;
 
+    Arbol a;
+    CrearArbol(a);
 
- do {
-    InicioPrograma(input);
-    getSiguiente(input,comando,i);
-     printf("%d",i);
-    if(validarComando(comando)){
-       printf("\nComando Validado\n");
-        if(seleccionComando(comando)==1) {
-        comandoCrear(input, comando);
-                }
-        else if(seleccionComando(comando)==2)
-                printf("Entro a sumar");
-        else if(seleccionComando(comando)==3)
-                printf("Entro a multiplicar");
-        else if(seleccionComando(comando)==4)
-                printf("Entro a evaluar");
-        else if(seleccionComando(comando)==5)
-                printf("Entro a es raiz");
-        else if(seleccionComando(comando)==6)
-                printf("Entro a mostrar");
-        else if(seleccionComando(comando)==7)
-                printf("Entro a guardar");
-        else if(seleccionComando(comando)==8)
-                printf("Entro a recuperar");
-        else if(seleccionComando(comando)==9)
-                printf("Hasta Luego!");
-    }
-    else {
-        printf("\nTiene un error en el nombre del comando, usted escribio: ");
-        print(comando);
-    }
-} while (seleccionComando(comando)!= 9);
+    IniciarSeleccion(a, input, comando);
 
-return 0;
+    strdestruir(comando);
+    strdestruir(input);
+
+    return 0;
 }
