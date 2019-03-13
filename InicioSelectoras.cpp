@@ -32,16 +32,8 @@ void IniciarSeleccion(Arbol a, string input, string comando) {
         else if(seleccionComando(comando)== 11)
             SintaxisComandoAyuda();
         else if(seleccionComando(comando)== 12) {
-            // falla operacion revisar!
-            boolean aux;
-            aux = stgVacio(input);
-            if(aux)
-                printf("\nUsted no ha escrito nada, intente nuevamente.\n");
-            else {
-                printf("\nTiene un error en el nombre del comando, usted escribio: ");
-                print(input);
-
-            }
+            printf("\nTiene un error en el nombre del comando, usted escribio: ");
+            print(input);
         }
     } while (seleccionComando(comando)!= 9);
 }

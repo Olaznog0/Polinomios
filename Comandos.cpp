@@ -30,8 +30,6 @@ void crearNombre(string in, string &parametro, int i, Arbol &a) {
         printf("\nEse nombre ya existe, intentelo nuevamente.\n");
     }
     else{
-        printf("\nEl nombre del polinomio ingresado es:");
-        print(parametro);
         crearTermino(in,parametro, i, a);
     }
 }
@@ -44,8 +42,6 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
     while(in[i]!= '\0') {
 
         getSiguiente(in, termino, i);
-        printf("\nEl termino ingresado es: \n");
-        print(termino);
         InsFront(listaTerminos, termino);
     }
 
@@ -58,10 +54,8 @@ void crearTermino(string in, string parametro, int i, Arbol &a) {
         insTerminoPrincipio(form, t);
         listaTerminos = listaTerminos -> sig;
     }
-    printf("\nLa Formula ingresada es: \n");
-    MostrarFormula(form);
     Polinomio poli = crearPolinomio(form,parametro);
-    printf("\nEl Polinomio ingresado es: \n");
+    printf("\nEl Polinomio que acaba de ingresar es: \n");
     mostrarPolinomio(poli);
 
     // revisar el strArch
@@ -261,22 +255,25 @@ void recuperarComando(string input, Arbol &a) {
 
     getSiguiente(input, comando, i);
     getSiguiente(input, nombreNuevo, i);
-    getSiguiente(input, nombreArch, i);
 
-    f = fopen(nombreArch, "rb");
+    if(ExistePolinomio(a, nombreNuevo))
+        printf("\nError el nombre ya existe.\n");
+    else {
+        getSiguiente(input, nombreArch, i);
 
-    string res;
-    strcrear(res);
+        f = fopen(nombreArch, "rb");
 
-    levantarString(f, res);
+        string res;
+        strcrear(res);
 
-    i=0;
-    crearTermino(res, nombreNuevo, i, a);// VALIDAR OPERACION
-    printf("\nAcaba de recuperar su archivo exitosamente.\n");
+        levantarString(f, res);
+        i=0;
+        crearTermino(res, nombreNuevo, i, a);
+        printf("\nAcaba de recuperar su archivo exitosamente.\n");
 
+        strdestruir(nombreArch);
+        strdestruir(res);
+
+    }
     strdestruir(comando);
-    //strdestruir(nombreNuevo);
-    strdestruir(nombreArch);
-    strdestruir(res);
-
 }
